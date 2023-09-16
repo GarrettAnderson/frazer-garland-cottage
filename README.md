@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Description
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a web application to track the weather, availability and to-do list for a family owned cottage rental on Cape Cod.
 
 ## Available Scripts
 

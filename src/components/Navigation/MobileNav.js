@@ -3,8 +3,11 @@ import "../../assets/styles/MobileNav.css";
 
 export default function MobileNav(props) {
   return (
-    <div className="navigation">
-      <ul style={{ display: props.toggleNav ? "flex" : "none" }}>
+    <div
+      className="navigation"
+      style={{ display: props.toggleNav ? "inline" : "none" }}
+    >
+      <ul>
         <li>Weather</li>
         <li>Availability</li>
         <li>Management Record</li>

@@ -7,8 +7,8 @@ import Hamburger from "./components/Navigation/Hamburger";
 function App() {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
-  const toggleHambuger = () => {
-    console.log("hamburger open");
+  const toggleHamburger = (x) => {
+    console.log(x, "hamburger open");
     setHamburgerOpen(!hamburgerOpen);
   };
 
@@ -20,7 +20,7 @@ function App() {
       </header>
 
       {/* Navigation menus */}
-      <Hamburger onClick={toggleHambuger} />
+      <Hamburger onClick={toggleHamburger} />
       <MobileNav toggleNav={hamburgerOpen} />
       {/* Weather Component */}
       <WeatherForceast />

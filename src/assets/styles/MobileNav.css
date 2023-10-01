@@ -1,8 +1,12 @@
-.navigation {
+.desktop-navigation {
   display: none;
 }
 
 @media (min-width: 767px) {
+  .desktop-navigation {
+    display: inline;
+  }
+
   .navigation {
     display: inline;
     width: 100%;

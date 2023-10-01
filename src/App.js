@@ -3,6 +3,7 @@ import "./App.css";
 import WeatherForceast from "./components/WeatherForcast";
 import MobileNav from "./components/Navigation/MobileNav";
 import Hamburger from "./components/Navigation/Hamburger";
+import DesktopNav from "./components/Navigation/DesktopNav";
 
 function App() {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -22,6 +23,7 @@ function App() {
       {/* Navigation menus */}
       <Hamburger onClick={toggleHamburger} />
       <MobileNav toggleNav={hamburgerOpen} />
+      <DesktopNav />
       {/* Weather Component */}
       <WeatherForceast />
     </div>

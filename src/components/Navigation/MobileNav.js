@@ -4,7 +4,7 @@ import "../../assets/styles/MobileNav.css";
 export default function MobileNav(props) {
   return (
     <div
-      className="navigation"
+      className="mobile-navigation"
       style={{ display: props.toggleNav ? "inline" : "none" }}
     >
       <ul>

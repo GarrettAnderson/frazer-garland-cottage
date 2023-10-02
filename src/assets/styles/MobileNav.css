@@ -7,14 +7,20 @@
     display: inline;
   }
 
-  .navigation {
+  .desktop-navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .mobile-navigation {
     display: inline;
     width: 100%;
     height: 50px;
     background-color: aqua;
   }
 
-  .navigation ul {
+  .mobile-navigation ul {
     display: flex;
     flex-wrap: wrap;
     float: right;
@@ -22,7 +28,7 @@
     padding: 0px 25px;
   }
 
-  .navigation ul li {
+  .mobile-navigation ul li {
     list-style-type: none;
     padding-right: 10px;
   }

@@ -16,18 +16,20 @@ function App() {
   };
 
   return (
-    <BrowserRouter>
-      <div>
-        {/* Navigation menus */}
-        <Hamburger onClick={toggleHamburger} />
-        <MobileNav toggleNav={hamburgerOpen} />
-        <DesktopNav />
-      </div>
-      <Routes>
-        <Route exact path="/" element={<Home />}></Route>
-        <Route exact path="/availability" element={<Availability />}></Route>
-      </Routes>
-    </BrowserRouter>
+    <div className="App-container">
+      <BrowserRouter>
+        <div>
+          {/* Navigation menus */}
+          <Hamburger onClick={toggleHamburger} />
+          <MobileNav toggleNav={hamburgerOpen} />
+          <DesktopNav />
+        </div>
+        <Routes>
+          <Route exact path="/" element={<Home />}></Route>
+          <Route exact path="/availability" element={<Availability />}></Route>
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 

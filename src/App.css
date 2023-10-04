@@ -7,8 +7,14 @@
   pointer-events: none;
 }
 
-.App-header {
+.App-container {
   background-image: url(../src/assets/images/cottage.png);
+  background-repeat: no-repeat;
+  overflow: auto;
+  height: 100vh;
+}
+
+.App-header {
   min-height: 80vh;
   display: flex;
   flex-direction: column;

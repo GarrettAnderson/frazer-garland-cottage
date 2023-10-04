@@ -8,7 +8,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-image: url(../src/assets/images/cottage.png);
   min-height: 80vh;
   display: flex;
   flex-direction: column;

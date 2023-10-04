@@ -22,13 +22,11 @@ function App() {
         <Hamburger onClick={toggleHamburger} />
         <MobileNav toggleNav={hamburgerOpen} />
         <DesktopNav />
-        {/* Weather Component */}
-        <Routes>
-          <Route exact path="/" element={<Home />}></Route>
-
-          <Route exact path="/availability" element={<Availability />}></Route>
-        </Routes>
       </div>
+      <Routes>
+        <Route exact path="/" element={<Home />}></Route>
+        <Route exact path="/availability" element={<Availability />}></Route>
+      </Routes>
     </BrowserRouter>
   );
 }

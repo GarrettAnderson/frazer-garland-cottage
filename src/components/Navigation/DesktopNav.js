@@ -1,14 +1,51 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "../../assets/styles/MobileNav.css";
 
-export default function MobileNav(props) {
+export default function DesktopNav(props) {
   return (
     <div className="desktop-navigation">
       <ul>
-        <li>Weather</li>
-        <li>Availability</li>
-        <li>Management Record</li>
-        <li>Projects</li>
+        <li>
+          <NavLink
+            className="navbar-link"
+            activeClassName="is-active"
+            to="/"
+            exact
+          >
+            Home
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            className="navbar-link"
+            activeClassName="is-active"
+            to="/availability"
+            exact
+          >
+            Availability
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            className="navbar-link"
+            activeClassName="is-active"
+            to="/records"
+            exact
+          >
+            Management Records
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            className="navbar-link"
+            activeClassName="is-active"
+            to="/projects"
+            exact
+          >
+            Projects
+          </NavLink>
+        </li>
       </ul>
     </div>
   );

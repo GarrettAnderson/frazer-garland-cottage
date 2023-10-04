@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-import WeatherForceast from "./components/WeatherForcast";
+import Home from "./components/Home";
 import MobileNav from "./components/Navigation/MobileNav";
 import Hamburger from "./components/Navigation/Hamburger";
 import DesktopNav from "./components/Navigation/DesktopNav";
+import Availability from "./components/Availability";
 
 function App() {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -14,19 +16,20 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>The Cottage</h1>
-        <h2>Frazer-Garland Trust</h2>
-      </header>
+    <BrowserRouter>
+      <div>
+        {/* Navigation menus */}
+        <Hamburger onClick={toggleHamburger} />
+        <MobileNav toggleNav={hamburgerOpen} />
+        <DesktopNav />
+        {/* Weather Component */}
+        <Routes>
+          <Route exact path="/" element={<Home />}></Route>
 
-      {/* Navigation menus */}
-      <Hamburger onClick={toggleHamburger} />
-      <MobileNav toggleNav={hamburgerOpen} />
-      <DesktopNav />
-      {/* Weather Component */}
-      <WeatherForceast />
-    </div>
+          <Route exact path="/availability" element={<Availability />}></Route>
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

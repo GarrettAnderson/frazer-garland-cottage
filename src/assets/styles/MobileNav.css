@@ -2,6 +2,20 @@
   display: none;
 }
 
+.mobile-navigation {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.mobile-navigation ul li {
+  list-style-type: none;
+  padding-right: 10px;
+}
+
+.mobile-navigation ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
 @media (min-width: 767px) {
   .desktop-navigation {
     display: inline;
@@ -28,8 +42,8 @@
     padding: 0px 25px;
   }
 
-  .mobile-navigation ul li {
+  /* .mobile-navigation ul li {
     list-style-type: none;
     padding-right: 10px;
-  }
+  } */
 }

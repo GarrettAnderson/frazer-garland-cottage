@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  padding: 1rem;
 }
 
 .App-logo {
@@ -25,4 +26,14 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.current-weather {
+  margin: 0 auto;
+}
+
+.weather-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  color: #fff;
 }

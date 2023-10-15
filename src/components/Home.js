@@ -40,8 +40,8 @@ export default function Home() {
         <h1>The Cottage</h1>
         <h2>Frazer-Garland Trust</h2>
       </header>
-      <section className="container col-12 col-md-9 col-lg-9 w-90">
-        <div className="row border container mt-4">
+      <section className="weather-container container col-12 col-md-9 col-lg-9 w-90">
+        <div className="current-weather row border container">
           {loading ? (
             <div>Loading weather data...</div>
           ) : (

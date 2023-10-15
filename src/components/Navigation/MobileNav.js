@@ -6,7 +6,7 @@ export default function MobileNav(props) {
   return (
     <div
       className="mobile-navigation"
-      style={{ display: props.toggleNav ? "inline" : "none" }}
+      style={{ display: props.toggleNav ? "block" : "none" }}
     >
       <ul>
         <li>

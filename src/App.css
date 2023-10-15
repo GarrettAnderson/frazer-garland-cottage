@@ -3,11 +3,6 @@
   padding: 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 .App-container {
   background-image: url(../src/assets/images/cottage.png);
   background-repeat: no-repeat;
@@ -16,7 +11,7 @@
 }
 
 .App-header {
-  min-height: 80vh;
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,4 +31,14 @@
   background-color: rgba(0, 0, 0, 0.5);
   padding: 2rem;
   color: #fff;
+}
+
+.availability-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
 }

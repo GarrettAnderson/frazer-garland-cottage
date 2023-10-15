@@ -1,5 +1,13 @@
 import React from "react";
+import "../App.css";
 
 export default function Availability() {
-  return <div>Availability</div>;
+  return (
+    <section className="availability-container">
+      <ul>
+        <li>Closed November through April</li>
+        <li>Available May and June 2024</li>
+      </ul>
+    </section>
+  );
 }

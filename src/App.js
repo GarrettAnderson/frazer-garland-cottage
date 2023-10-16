@@ -6,6 +6,8 @@ import MobileNav from "./components/Navigation/MobileNav";
 import Hamburger from "./components/Navigation/Hamburger";
 import DesktopNav from "./components/Navigation/DesktopNav";
 import Availability from "./components/Availability";
+import ManagementRecord from "./components/ManagementRecord";
+import ProjectList from "./components/ProjectList";
 
 function App() {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -27,6 +29,8 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
           <Route exact path="/availability" element={<Availability />}></Route>
+          <Route exact path="/records" element={<ManagementRecord />}></Route>
+          <Route exact path="/projects" element={<ProjectList />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

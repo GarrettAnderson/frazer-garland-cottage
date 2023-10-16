@@ -3,7 +3,7 @@ import "../assets/styles/Projects.css";
 
 export default function ProjectList() {
   return (
-    <section>
+    <section className="projects-container">
       {/* To Do Projects */}
 
       <section className="section-container to-do-projects">

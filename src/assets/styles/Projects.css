@@ -1,3 +1,15 @@
+.projects-container {
+  display: flex;
+}
+
+.section-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid #fff;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
 .card {
   width: 18rem;
 }

@@ -10,6 +10,15 @@
   flex-direction: column;
 }
 
+.section-container h1 {
+  margin: 0 auto;
+  color: #fff;
+}
+
+.section-container ol {
+  padding: 1rem;
+}
+
 .card {
   width: 18rem;
 }

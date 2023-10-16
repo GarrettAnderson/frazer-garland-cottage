@@ -22,3 +22,7 @@
 .card {
   width: 18rem;
 }
+
+.section-container button {
+  color: #fff;
+}

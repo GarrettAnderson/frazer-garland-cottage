@@ -1,7 +1,15 @@
 import React, { useState } from "react";
+import { Modal, Button } from "react-bootstrap";
 import "../assets/styles/Projects.css";
 
 export default function ProjectList() {
+  // modal functionality
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  // project lists
+
   let [projectToDo, addToDo] = useState([
     {
       ProjectTitle: "Project 1",
@@ -61,7 +69,9 @@ export default function ProjectList() {
         </ol>
 
         {/* open model to add card */}
-        <button className="btn">+ Add Card</button>
+        <button className="btn" onClick={handleShow}>
+          + Add Card
+        </button>
       </section>
       {/* Projects In Progress Section */}
       <section className="section-container in-progress-projects">
@@ -99,6 +109,22 @@ export default function ProjectList() {
           })}
         </ol>
       </section>
+
+      {/* Add project modal */}
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Modal heading</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </section>
   );
 }

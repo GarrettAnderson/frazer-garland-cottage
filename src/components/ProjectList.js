@@ -12,36 +12,30 @@ export default function ProjectList() {
 
   let [projectToDo, addToDo] = useState([
     {
-      ProjectTitle: "Project 1",
       Details:
         "Some quick example text to build on the card title and make up the bulk of the card's content.",
     },
     {
-      ProjectTitle: "Project 2",
       Details:
         "Some quick example text to build on the card title and make up the bulk of the card's content.",
     },
   ]);
   let [projectInProgress, addInProgress] = useState([
     {
-      ProjectTitle: "Project 3",
       Details:
         "Some quick example text to build on the card title and make up the bulk of the card's content.",
     },
     {
-      ProjectTitle: "Project 4",
       Details:
         "Some quick example text to build on the card title and make up the bulk of the card's content.",
     },
   ]);
   let [projectCompleted, addCompleted] = useState([
     {
-      ProjectTitle: "Project 5",
       Details:
         "Some quick example text to build on the card title and make up the bulk of the card's content.",
     },
     {
-      ProjectTitle: "Project 6",
       Details:
         "Some quick example text to build on the card title and make up the bulk of the card's content.",
     },
@@ -51,7 +45,8 @@ export default function ProjectList() {
 
   const addProjectToDo = (e) => {
     console.log(projectDescription);
-
+    addToDo([...projectToDo, { Details: projectDescription }]);
+    console.log(projectToDo);
     handleClose();
   };
 

@@ -5,6 +5,7 @@ import "../assets/styles/Projects.css";
 export default function ProjectList() {
   // modal functionality
   const [show, setShow] = useState(false);
+  const [projectDescription, setProjectDescription] = useState();
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   // project lists
@@ -49,7 +50,7 @@ export default function ProjectList() {
   //   Add project to the to do array and close the modal
 
   const addProjectToDo = (e) => {
-    console.log(e);
+    console.log(projectDescription);
 
     handleClose();
   };
@@ -126,7 +127,12 @@ export default function ProjectList() {
           <Form>
             <Form.Group className="mb-3" controlId="project-description">
               <Form.Label>Project Description</Form.Label>
-              <Form.Control as="textarea" rows={3} name="project-description" />
+              <Form.Control
+                as="textarea"
+                rows={3}
+                name="project-description"
+                onChange={(e) => setProjectDescription(e.target.value)}
+              />
             </Form.Group>
           </Form>
         </Modal.Body>

@@ -11,7 +11,7 @@ app.use(express.json());
 // Connect to database
 const db = mysql.createConnection(
   {
-    host: "localhost",
+    host: "127.0.0.1",
     user: "root",
     password: "password",
     database: "cottage_db",
@@ -38,7 +38,7 @@ app.post("/api/new-project", ({ body }, res) => {
 
 // Read the projects
 app.get("/api/projects", (req, res) => {
-  const sql = `SELECT projects.project_details AS details FROM projects`;
+  const sql = `SELECT * FROM projects`;
 
   db.query(sql, (err, rows) => {
     if (err) {

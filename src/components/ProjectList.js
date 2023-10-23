@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Modal, Button, Form } from "react-bootstrap";
 import "../assets/styles/Projects.css";
+import axios from "axios";
 
 export default function ProjectList() {
   // modal functionality
@@ -10,39 +11,25 @@ export default function ProjectList() {
   const handleShow = () => setShow(true);
   // project lists
 
-  let [projectToDo, addToDo] = useState([
-    {
-      Details:
-        "Some quick example text to build on the card title and make up the bulk of the card's content.",
-    },
-    {
-      Details:
-        "Some quick example text to build on the card title and make up the bulk of the card's content.",
-    },
-  ]);
-  let [projectInProgress, addInProgress] = useState([
-    {
-      Details:
-        "Some quick example text to build on the card title and make up the bulk of the card's content.",
-    },
-    {
-      Details:
-        "Some quick example text to build on the card title and make up the bulk of the card's content.",
-    },
-  ]);
-  let [projectCompleted, addCompleted] = useState([
-    {
-      Details:
-        "Some quick example text to build on the card title and make up the bulk of the card's content.",
-    },
-    {
-      Details:
-        "Some quick example text to build on the card title and make up the bulk of the card's content.",
-    },
-  ]);
+  let [projectToDo, addToDo] = useState([]);
+  let [projectInProgress, addInProgress] = useState([]);
+  let [projectCompleted, addCompleted] = useState([]);
 
-  //   Add project to the to do array and close the modal
+  // Get the projects from the API endpoint
+  useEffect(() => {
+    axios
+      .get("http://localhost:3001/api/projects")
+      .then((response) => {
+        console.log(response);
+        addProjectToDo(response.data);
+      })
+      .catch((error) => {
+        console.error("Error fetching data");
+        throw error;
+      });
+  }, []);
 
+  // Add project to the to do array and close the modal
   const addProjectToDo = (e) => {
     console.log(projectDescription);
     addToDo([...projectToDo, { Details: projectDescription }]);

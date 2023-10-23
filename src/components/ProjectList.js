@@ -18,7 +18,11 @@ export default function ProjectList() {
   // Get the projects from the API endpoint
   useEffect(() => {
     axios
-      .get("http://localhost:3001/api/projects")
+      .get("http://localhost:3001/api/projects", {
+        headers: {
+          "Access-Control-Allow-Origin": true,
+        },
+      })
       .then((response) => {
         console.log(response);
         addProjectToDo(response.data);

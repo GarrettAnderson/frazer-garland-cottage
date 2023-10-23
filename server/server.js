@@ -1,5 +1,6 @@
 const express = require("express");
 const mysql = require("mysql2");
+const cors = require("cors");
 
 const PORT = process.env.PORT || 3001;
 const app = express();
@@ -7,6 +8,8 @@ const app = express();
 // Express middleware
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+
+app.use(cors());
 
 // Connect to database
 const db = mysql.createConnection(
@@ -20,7 +23,7 @@ const db = mysql.createConnection(
 );
 
 // Create a project
-app.post("/api/new-project", ({ body }, res) => {
+app.post("/api/new-project", cors(), ({ body }, res) => {
   const sql = `INSERT INTO projects (project_details) VALUES (?)`;
   const params = [body.project_details];
 
@@ -37,7 +40,7 @@ app.post("/api/new-project", ({ body }, res) => {
 });
 
 // Read the projects
-app.get("/api/projects", (req, res) => {
+app.get("/api/projects", cors(), (req, res) => {
   const sql = `SELECT * FROM projects`;
 
   db.query(sql, (err, rows) => {

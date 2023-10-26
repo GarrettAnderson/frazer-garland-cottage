@@ -77,7 +77,7 @@ app.listen(PORT, () => {
 });
 
 app.delete("/api/project/:id", (req, res) => {
-  const sql = "DELETE FROM projects WHERE id = ?";
+  const sql = `DELETE FROM projects WHERE id = ?`;
   const params = [req.params.id];
 
   db.query(sql, params, (err, result) => {

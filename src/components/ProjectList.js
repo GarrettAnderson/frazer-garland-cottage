@@ -63,7 +63,7 @@ export default function ProjectList() {
 
   // Delete a project from database
   const deleteProject = (id) => {
-    console.log("Delete project");
+    console.log("Delete project:", id);
   };
 
   return (
@@ -77,7 +77,7 @@ export default function ProjectList() {
             return (
               <li key={i}>
                 <div className="card">
-                  <div className="card-body">
+                  <div className="card-body project-card-details">
                     {/* <h5 className="card-title">{project.ProjectTitle}</h5> */}
                     <p className="card-text">{project.project_details}</p>
                     <FontAwesomeIcon

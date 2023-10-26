@@ -28,3 +28,13 @@
 .section-container button {
   color: #fff;
 }
+
+.project-card-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-card-details p {
+  margin: 0.5rem 0;
+}

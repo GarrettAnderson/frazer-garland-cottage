@@ -68,17 +68,10 @@ app.get("/api/projects", cors(), (req, res) => {
   });
 });
 
-app.use((req, res) => {
-  res.status(404).end();
-});
-
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
-
+// Delete a project from projects table
 app.delete("/api/project/:id", (req, res) => {
   const sql = `DELETE FROM projects WHERE id = ?`;
-  const params = [req.params.id];
+  const params = req.params.id;
 
   db.query(sql, params, (err, result) => {
     if (err) {
@@ -96,4 +89,12 @@ app.delete("/api/project/:id", (req, res) => {
       });
     }
   });
+});
+
+app.use((req, res) => {
+  res.status(404).end();
+});
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });

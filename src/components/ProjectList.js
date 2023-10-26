@@ -61,6 +61,11 @@ export default function ProjectList() {
     window.location.reload();
   };
 
+  // Delete a project from database
+  const deleteProject = (id) => {
+    console.log("Delete project");
+  };
+
   return (
     <section className="projects-container">
       {/* To Do Projects */}
@@ -76,7 +81,10 @@ export default function ProjectList() {
                     {/* <h5 className="card-title">{project.ProjectTitle}</h5> */}
                     <p className="card-text">
                       {project.project_details}
-                      <FontAwesomeIcon icon={faTrash} />
+                      <FontAwesomeIcon
+                        icon={faTrash}
+                        onClick={deleteProject(project.id)}
+                      />
                     </p>
                   </div>
                 </div>

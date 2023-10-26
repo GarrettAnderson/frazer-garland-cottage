@@ -71,23 +71,25 @@ app.get("/api/projects", cors(), (req, res) => {
 // Delete a project from projects table
 app.delete("/api/project/:id", (req, res) => {
   const sql = `DELETE FROM projects WHERE id = ?`;
-  const params = req.params.id;
+  const params = [req.params.id];
 
   db.query(sql, params, (err, result) => {
-    if (err) {
-      console.log("error occured");
-      res.statusMessage(400).json({ error: res.message });
-    } else if (!result.affectedRows) {
-      res.json({
-        message: "Project not found",
-      });
-    } else {
-      res.json({
-        message: "Project deleted",
-        changes: result.affectedRows,
-        id: req.params.id,
-      });
-    }
+    // if (err) {
+    //   console.log("error occured");
+    //   res.statusMessage(400).json({ error: res.message });
+    // } else if (!result.affectedRows) {
+    //   res.json({
+    //     message: "Project not found",
+    //   });
+    // } else {
+    //   res.json({
+    //     message: "Project deleted",
+    //     changes: result.affectedRows,
+    //     id: req.params.id,
+    //   });
+    // }
+    if (err) return res.status(500).send("Error");
+    res.status(200).send(result);
   });
 });
 

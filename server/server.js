@@ -82,6 +82,7 @@ app.delete("/api/project/:id", (req, res) => {
 
   db.query(sql, params, (err, result) => {
     if (err) {
+      console.log("error occured");
       res.statusMessage(400).json({ error: res.message });
     } else if (!result.affectedRows) {
       res.json({

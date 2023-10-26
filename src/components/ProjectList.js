@@ -79,13 +79,11 @@ export default function ProjectList() {
                 <div className="card">
                   <div className="card-body">
                     {/* <h5 className="card-title">{project.ProjectTitle}</h5> */}
-                    <p className="card-text">
-                      {project.project_details}
-                      <FontAwesomeIcon
-                        icon={faTrash}
-                        onClick={deleteProject(project.id)}
-                      />
-                    </p>
+                    <p className="card-text">{project.project_details}</p>
+                    <FontAwesomeIcon
+                      icon={faTrash}
+                      onClick={deleteProject(project.id)}
+                    />
                   </div>
                 </div>
               </li>

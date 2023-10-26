@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import moment from "moment";
 import "../App.css";
 
 export default function Home() {
@@ -73,6 +74,7 @@ export default function Home() {
               {weatherData.daily.slice(0, 5).map((day, index) => {
                 return (
                   <li key={index} className="column border">
+                    <h5>{moment.unix(day.dt).format("L")}</h5>
                     <p>Hi: {day.temp.max}</p>
                     <p>Low: {day.temp.min}</p>
                   </li>

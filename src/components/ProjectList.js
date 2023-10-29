@@ -64,6 +64,17 @@ export default function ProjectList() {
   // Delete a project from database
   const deleteProject = (id) => {
     console.log("Delete project:", id);
+
+    axios
+      .delete(`http://localhost:3001/api/project/${id}`)
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+
+    window.location.reload();
   };
 
   return (
@@ -82,7 +93,9 @@ export default function ProjectList() {
                     <p className="card-text">{project.project_details}</p>
                     <FontAwesomeIcon
                       icon={faTrash}
-                      onClick={deleteProject(project.id)}
+                      onClick={() => {
+                        deleteProject(project.id);
+                      }}
                     />
                   </div>
                 </div>

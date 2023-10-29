@@ -23,6 +23,12 @@
   color: #61dafb;
 }
 
+.site-navigation {
+  margin: 1rem;
+  display: flex;
+  justify-content: end;
+}
+
 .current-weather {
   margin: 0 auto;
 }

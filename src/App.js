@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="App-container">
       <BrowserRouter>
-        <div>
+        <div className="site-navigation">
           {/* Navigation menus */}
           <Hamburger onClick={toggleHamburger} />
           <MobileNav toggleNav={hamburgerOpen} />

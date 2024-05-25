@@ -7,10 +7,12 @@ export default function Home() {
   let [loading, setLoading] = useState(true);
   const lat = 41.553223;
   const long = -70.608589;
-  var apiKey = "189a38ae6bf0bf147aa5670c0b4b70d5";
+  let apiKey = process.env.REACT_APP_OPEN_WEATHER_API_KEY;
+  // let apiKey = "189a38ae6bf0bf147aa5670c0b4b70d5";
   // var cityWeather = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&appid=${apiKey}`;
 
   useEffect(() => {
+    console.log(process.env.OPEN_WEATHER_API_KEY);
     const fetchWeather = async () => {
       // fetch weather data with lat and long variables
       fetch(

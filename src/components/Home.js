@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import moment from "moment";
+import MobileNav from "./Navigation/MobileNav";
+import Hamburger from "./Navigation/Hamburger";
+import DesktopNav from "./Navigation/DesktopNav";
 import "../App.css";
 
 export default function Home() {
@@ -8,8 +11,8 @@ export default function Home() {
   const lat = 41.553223;
   const long = -70.608589;
   let apiKey = process.env.REACT_APP_OPEN_WEATHER_API_KEY;
-  // let apiKey = "189a38ae6bf0bf147aa5670c0b4b70d5";
-  // var cityWeather = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&appid=${apiKey}`;
+
+  // create a useCallback or useMemo function for the fetch to the weather api and put that function in the useEffect
 
   useEffect(() => {
     console.log(process.env.OPEN_WEATHER_API_KEY);
@@ -37,9 +40,22 @@ export default function Home() {
     fetchWeather();
   }, [lat, long]);
 
+  const [hamburgerOpen, setHamburgerOpen] = useState(false);
+
+  const toggleHamburger = (x) => {
+    console.log(x, "hamburger open");
+    setHamburgerOpen(!hamburgerOpen);
+  };
+
   return (
     <div className="App">
       <header className="App-header">
+        <div className="site-navigation">
+          {/* Navigation menus */}
+          <Hamburger onClick={toggleHamburger} />
+          <MobileNav toggleNav={hamburgerOpen} />
+          <DesktopNav />
+        </div>
         <h1>The Cottage</h1>
         <h2>Frazer-Garland Trust</h2>
       </header>
@@ -49,19 +65,32 @@ export default function Home() {
             <div>Loading weather data...</div>
           ) : (
             <ol>
+              <li className="d-flex flex-row">Falmouth, MA</li>
               <li className="d-flex flex-row">
-                <p>Current Temp: </p>
-                <span id="current-temp">{weatherData.current.temp}</span>
+                {weatherData.current.weather[0].description}
               </li>
               <li className="d-flex flex-row">
-                <p>Wind Speed: </p>
-                <span id="current-wind">{weatherData.current.wind_speed}</span>
+                <img
+                  src={`http://openweathermap.org/img/wn/${weatherData.current.weather[0].icon}@2x.png`}
+                />
               </li>
               <li className="d-flex flex-row">
-                <p>Humidity: </p>
-                <span id="current-humidity">
-                  {weatherData.current.humidity}
+                <span id="current-temp">
+                  {weatherData.current.temp.toFixed(0)}°
                 </span>
+                <p>Current Temp </p>
+              </li>
+              <li className="d-flex flex-row">
+                <span id="current-wind">
+                  {weatherData.current.wind_speed.toFixed(0)} MPH
+                </span>
+                <p>Wind Speed </p>
+              </li>
+              <li className="d-flex flex-row">
+                <span id="current-humidity">
+                  {weatherData.current.humidity} %
+                </span>
+                <p>Humidity </p>
               </li>
             </ol>
           )}

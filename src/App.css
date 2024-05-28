@@ -14,13 +14,30 @@
   display: flex;
   flex-direction: column;
   /* align-items: center; */
-  justify-content: center;
-  color: white;
+  justify-content: space-between;
+  color: #f3fffb;
+  height: 12rem;
+  background-size: cover;
 }
 
 .App-header h1,
 .App-header h2 {
   text-align: center;
+}
+
+.App-header h1 {
+  font-size: 3.5rem;
+  font-weight: bolder;
+}
+
+.App-header h2 {
+  font-size: 0.75rem;
+  font-weight: bolder;
+}
+
+.App-header h2 {
+  font-size: 12px;
+  font-weight: bolder;
 }
 
 .App-link {
@@ -34,6 +51,9 @@
 .current-weather {
   margin: 0 auto;
   padding: 0;
+  border: 5px solid #cfe4f3;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .weather-container {
@@ -60,16 +80,26 @@
   list-style: none;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .current-weather ol li:first-child {
   align-items: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .current-weather ol li:nth-child(2) {
   flex-direction: column !important;
   align-items: center;
+  text-transform: uppercase;
+}
+
+.current-weather ol li:nth-child(2) img {
+  width: 7rem;
+}
+
+.current-weather ol li:nth-child(2) p {
+  margin-top: -20px;
 }
 
 .current-weather ol li:nth-child(3) {
@@ -77,8 +107,17 @@
   align-items: center;
 }
 
-.current-weather ol li:nth-child(3) img {
-  width: 10rem;
+.current-weather ol li:nth-child(3) div {
+  font-size: 5rem;
+  line-height: 5rem;
+}
+.current-weather ol li:nth-child(3) div span {
+  font-size: 2rem;
+  margin-top: -20px;
+}
+
+.current-weather ol li:nth-child(3) p {
+  text-transform: uppercase;
 }
 
 .current-weather ol li:nth-child(4) {
@@ -86,14 +125,31 @@
   align-items: center;
 }
 
-.current-weather ol li:nth-child(5) {
-  flex-direction: column !important;
-  align-items: center;
+.current-weather ol li:nth-child(4) div {
+  font-size: 5rem;
+  line-height: 5rem;
+}
+
+.current-weather ol li:nth-child(4) p {
+  text-transform: uppercase;
 }
 
 .current-weather ol li:last-child {
   flex-direction: column !important;
   align-items: center;
+}
+
+.current-weather ol li:last-child p {
+  text-transform: uppercase;
+}
+
+.current-weather ol li:last-child div {
+  font-size: 5rem;
+  line-height: 5rem;
+}
+.current-weather ol li:last-child div span {
+  font-size: 2rem;
+  margin-top: -20px;
 }
 
 @media screen and (min-width: 600px) {

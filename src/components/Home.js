@@ -60,36 +60,37 @@ export default function Home() {
         <h2>Frazer-Garland Trust</h2>
       </header>
       <section className="weather-container container col-12 col-md-9 col-lg-9 w-90">
-        <div className="current-weather row border container">
+        <div className="current-weather row container">
           {loading ? (
             <div>Loading weather data...</div>
           ) : (
             <ol>
               <li className="d-flex flex-row">Falmouth, MA</li>
               <li className="d-flex flex-row">
-                {weatherData.current.weather[0].description}
-              </li>
-              <li className="d-flex flex-row">
                 <img
                   src={`http://openweathermap.org/img/wn/${weatherData.current.weather[0].icon}@2x.png`}
                 />
+                <p>{weatherData.current.weather[0].description}</p>
+              </li>
+
+              <li className="d-flex flex-row">
+                <div id="current-temp">
+                  {weatherData.current.temp.toFixed(0)}
+                  <span className="temp-deg-symbol">°</span>
+                </div>
+                <p>Current Temp</p>
               </li>
               <li className="d-flex flex-row">
-                <span id="current-temp">
-                  {weatherData.current.temp.toFixed(0)}°
-                </span>
-                <p>Current Temp </p>
+                <div id="current-wind">
+                  {weatherData.current.wind_speed.toFixed(0)}
+                </div>
+                <p>Wind Speed (MPH)</p>
               </li>
               <li className="d-flex flex-row">
-                <span id="current-wind">
-                  {weatherData.current.wind_speed.toFixed(0)} MPH
-                </span>
-                <p>Wind Speed </p>
-              </li>
-              <li className="d-flex flex-row">
-                <span id="current-humidity">
-                  {weatherData.current.humidity} %
-                </span>
+                <div id="current-humidity">
+                  {weatherData.current.humidity}
+                  <span className="percent-symbol">%</span>
+                </div>
                 <p>Humidity </p>
               </li>
             </ol>

@@ -185,12 +185,8 @@
     justify-content: center;
   }
 
-  .current-weather ol li:nth-child(5) {
-    flex-direction: column !important;
-    justify-content: center;
-  }
-
   .current-weather ol li:last-child {
     flex-direction: column !important;
+    justify-content: center;
   }
 }

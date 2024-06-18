@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Beachfly;
+  src: url("../src/assets/fonts/Beachfly_Free_Trial.otf");
+}
+
 /* .App {
   text-align: center;
   padding: 1rem;
@@ -8,7 +13,7 @@
 
 .App-header {
   /* background-image: url(../src/assets/images/cottage.png); */
-  background-image: url(../src/assets/images/beach_path.jpeg);
+  background-image: url("../src/assets/images/beach_path.jpeg");
   background-repeat: no-repeat;
   /* background-color: rgba(0, 0, 0, 0.5); */
   display: flex;
@@ -26,6 +31,7 @@
 }
 
 .App-header h1 {
+  font-family: "Beachfly", serif;
   font-size: 3.5rem;
   font-weight: bolder;
 }

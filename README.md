@@ -2,7 +2,8 @@
 
 This is a web application to track the weather, availability and to-do list for a family owned cottage rental on Cape Cod.
 
-## Available Scripts
+<!--
+## Local Development
 
 In the project directory, you can run:
 
@@ -67,4 +68,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->

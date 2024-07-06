@@ -10,6 +10,11 @@
       "StackName": "amplify-frazergarlandcottage-dev-7a95b",
       "StackId": "arn:aws:cloudformation:us-east-1:767398063654:stack/amplify-frazergarlandcottage-dev-7a95b/472bd3f0-3bec-11ef-a696-120427d7da73",
       "AmplifyAppId": "d2tgqacpd9gxx"
+    },
+    "categories": {
+      "api": {
+        "frazergarlandcottage": {}
+      }
     }
   }
 }

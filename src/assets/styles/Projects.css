@@ -1,5 +1,14 @@
 .projects-container {
   display: flex;
+  flex-direction: column;
+}
+
+.project-status-container {
+  display: flex;
+  width: 1120px;
+  max-width: 1120px;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .section-container {

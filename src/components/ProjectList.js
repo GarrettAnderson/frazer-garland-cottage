@@ -5,6 +5,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/fontawesome-free-solid";
 import { createProject } from "../graphql/mutations";
 import { listProjects } from "../graphql/queries";
+import MobileNav from "./Navigation/MobileNav";
+import Hamburger from "./Navigation/Hamburger";
+import DesktopNav from "./Navigation/DesktopNav";
 import "../assets/styles/Projects.css";
 import axios from "axios";
 
@@ -71,75 +74,92 @@ export default function ProjectList() {
     window.location.reload();
   };
 
+  const [hamburgerOpen, setHamburgerOpen] = useState(false);
+
+  const toggleHamburger = (x) => {
+    console.log(x, "hamburger open");
+    setHamburgerOpen(!hamburgerOpen);
+  };
+
   return (
     <section className="projects-container">
-      {/* To Do Projects */}
+      <header>
+        <div className="site-navigation">
+          {/* Navigation menus */}
+          <Hamburger onClick={toggleHamburger} />
+          <MobileNav toggleNav={hamburgerOpen} />
+          <DesktopNav />
+        </div>
+      </header>
 
-      <section className="section-container to-do-projects">
-        <h1>To Do</h1>
-        <ol>
-          {projects.map((project, i) => {
-            return (
-              <li key={i}>
-                <div className="card">
-                  <div className="card-body project-card-details">
-                    {/* <h5 className="card-title">{project.ProjectTitle}</h5> */}
-                    <p className="card-text">{project.project_details}</p>
-                    <FontAwesomeIcon
-                      icon={faTrash}
-                      onClick={() => {
-                        deleteProject(project.id);
-                      }}
-                    />
+      <section className="project-status-container">
+        {/* To Do Projects */}
+        <section className="section-container to-do-projects">
+          <h1>To Do</h1>
+          <ol>
+            {projects.map((project, i) => {
+              return (
+                <li key={i}>
+                  <div className="card">
+                    <div className="card-body project-card-details">
+                      {/* <h5 className="card-title">{project.ProjectTitle}</h5> */}
+                      <p className="card-text">{project.project_details}</p>
+                      <FontAwesomeIcon
+                        icon={faTrash}
+                        onClick={() => {
+                          deleteProject(project.id);
+                        }}
+                      />
+                    </div>
                   </div>
-                </div>
-              </li>
-            );
-          })}
-        </ol>
+                </li>
+              );
+            })}
+          </ol>
 
-        {/* open model to add card */}
-        <button className="btn" onClick={handleShow}>
-          + Add Card
-        </button>
-      </section>
-      {/* Projects In Progress Section */}
-      <section className="section-container in-progress-projects">
-        <h1>In Progress</h1>
-        <ol>
-          {projectInProgress.map((project, i) => {
-            return (
-              <li key={i}>
-                <div className="card">
-                  <div className="card-body">
-                    <h5 className="card-title">{project.ProjectTitle}</h5>
-                    <p className="card-text">{project.Details}</p>
+          {/* open model to add card */}
+          <button className="btn" onClick={handleShow}>
+            + Add Card
+          </button>
+        </section>
+        {/* Projects In Progress Section */}
+        <section className="section-container in-progress-projects">
+          <h1>In Progress</h1>
+          <ol>
+            {projectInProgress.map((project, i) => {
+              return (
+                <li key={i}>
+                  <div className="card">
+                    <div className="card-body">
+                      <h5 className="card-title">{project.ProjectTitle}</h5>
+                      <p className="card-text">{project.Details}</p>
+                    </div>
                   </div>
-                </div>
-              </li>
-            );
-          })}
-        </ol>
-      </section>
-      {/* Projects Completed Section */}
-      <section className="section-container completed-projects">
-        <h1>Completed</h1>
-        <ol>
-          {projectCompleted.map((project, i) => {
-            return (
-              <li key={i}>
-                <div className="card">
-                  <div className="card-body">
-                    <h5 className="card-title">{project.ProjectTitle}</h5>
-                    <p className="card-text">{project.Details}</p>
-                  </div>
-                </div>
-              </li>
-            );
-          })}
-        </ol>
-      </section>
+                </li>
+              );
+            })}
+          </ol>
+        </section>
 
+        {/* Projects Completed Section */}
+        <section className="section-container completed-projects">
+          <h1>Completed</h1>
+          <ol>
+            {projectCompleted.map((project, i) => {
+              return (
+                <li key={i}>
+                  <div className="card">
+                    <div className="card-body">
+                      <h5 className="card-title">{project.ProjectTitle}</h5>
+                      <p className="card-text">{project.Details}</p>
+                    </div>
+                  </div>
+                </li>
+              );
+            })}
+          </ol>
+        </section>
+      </section>
       {/* Add project modal */}
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>

@@ -78,7 +78,7 @@ export default function ProjectList() {
       <section className="section-container to-do-projects">
         <h1>To Do</h1>
         <ol>
-          {projectToDo.map((project, i) => {
+          {projects.map((project, i) => {
             return (
               <li key={i}>
                 <div className="card">

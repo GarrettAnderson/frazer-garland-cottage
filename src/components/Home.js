@@ -10,12 +10,12 @@ export default function Home() {
   let [loading, setLoading] = useState(true);
   const lat = 41.553223;
   const long = -70.608589;
-  let apiKey = process.env.REACT_APP_OPEN_WEATHER_API_KEY;
+  let apiKey = '189a38ae6bf0bf147aa5670c0b4b70d5' // process.env.REACT_APP_OPEN_WEATHER_API_KEY;
 
   // create a useCallback or useMemo function for the fetch to the weather api and put that function in the useEffect
 
   useEffect(() => {
-    console.log(process.env.OPEN_WEATHER_API_KEY);
+   // console.log(process.env.OPEN_WEATHER_API_KEY);
     const fetchWeather = async () => {
       // fetch weather data with lat and long variables
       fetch(

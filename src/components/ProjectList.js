@@ -1,9 +1,14 @@
 import React, { useState, useEffect } from "react";
+import { generateClient } from "aws-amplify/api";
 import { Modal, Button, Form } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/fontawesome-free-solid";
+import { createProject } from "../graphql/mutations";
+import { listProjects } from "../graphql/queries";
 import "../assets/styles/Projects.css";
 import axios from "axios";
+
+const client = generateClient();
 
 export default function ProjectList() {
   // modal functionality
@@ -13,33 +18,22 @@ export default function ProjectList() {
   const handleShow = () => setShow(true);
   // project lists
 
-  let [projectToDo, addToDo] = useState([]);
+  let [projects, addToProjects] = useState([]);
   let [projectInProgress, addInProgress] = useState([]);
   let [projectCompleted, addCompleted] = useState([]);
 
   // Get the projects from the API endpoint
   useEffect(() => {
     console.log("test");
-    axios
-      .get("http://localhost:3001/api/projects", {
-        headers: {
-          "Access-Control-Allow-Origin": "*",
-          "Access-Control-Allow-Methods": "POST, GET, PUT",
-          "Access-Control-Allow-Headers": "Content-Type",
-          "Content-Type": "application/json",
-          mode: "cors",
-        },
-      })
-      .then((response) => {
-        console.log(response.data.data);
-        addToDo(response.data.data);
-      })
-      .catch((error) => {
-        console.error("Error fetching data");
-        throw error;
-      });
+    getProjects();
   }, []);
 
+  const getProjects = async () => {
+    const result = await client.graphql({
+      query: listProjects,
+    });
+    addToProjects(result.data.listProjects.items);
+  };
   // Add project to the to do array and close the modal
   const addProjectToDo = (e) => {
     console.log(projectDescription);

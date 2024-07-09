@@ -9,8 +9,9 @@
 }
 */
 .App-container {
-  background-image: url("../src/assets/images/beach_path_crop.jpeg");
-    /* background-repeat: no-repeat; */
+  /* background-image: url("../src/assets/images/beach_path_crop.jpeg"); */
+  /* background-repeat: no-repeat; */
+  background-color: #e5f1f9;  
 } 
 
 .App-header {

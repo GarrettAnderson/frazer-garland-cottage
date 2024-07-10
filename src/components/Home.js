@@ -5,6 +5,8 @@ import Hamburger from "./Navigation/Hamburger";
 import DesktopNav from "./Navigation/DesktopNav";
 import CottageImg from "../assets/images/cottage.png";
 import "../assets/styles/Home.css";
+import WeatherForecast from "./WeatherForecast";
+import { CurrentWeather } from "./CurrentWeather";
 
 export default function Home() {
   let [weatherData, setWeatherData] = useState({});
@@ -49,79 +51,35 @@ export default function Home() {
   };
 
   return (
-    <div className="App">
+    <div className="landing_home-page">
       <nav className="site-navigation">
         {/* Navigation menus */}
         <Hamburger onClick={toggleHamburger} />
         <MobileNav toggleNav={hamburgerOpen} />
         <DesktopNav />
       </nav>
-      <header className="App-hero">
+      {/* <header>
+        <section className="weather-container container col-12 col-md-9 col-lg-9 w-90">
+          <div className="current-weather row container">
+            {loading ? (
+              <div>Loading weather data...</div>
+            ) : (
+              <CurrentWeather weatherData={weatherData} />
+            )}
+          </div>
+          <WeatherForecast loading={loading} weatherData={weatherData} />
+        </section>
+      </header> */}
+      <main className="App-hero">
         <section>
           <h1>The Cottage</h1>
-          <h2>Frazer-Garland Trust</h2>
+          <h2>Falmouth, MA</h2>
+          {/* <h2>Frazer-Garland Trust</h2> */}
         </section>
         <section className="hero-img_hidden-on-mbile">
           <img src={CottageImg} />
         </section>
-      </header>
-      <section className="weather-container container col-12 col-md-9 col-lg-9 w-90">
-        <div className="current-weather row container">
-          {loading ? (
-            <div>Loading weather data...</div>
-          ) : (
-            <ol>
-              <li className="d-flex flex-row">Falmouth, MA</li>
-              <li className="d-flex flex-row">
-                <img
-                  src={`http://openweathermap.org/img/wn/${weatherData.current.weather[0].icon}@2x.png`}
-                />
-                <p>{weatherData.current.weather[0].description}</p>
-              </li>
-
-              <li className="d-flex flex-row">
-                <div id="current-temp">
-                  {weatherData.current.temp.toFixed(0)}
-                  <span className="temp-deg-symbol">°</span>
-                </div>
-                <p>Current Temp</p>
-              </li>
-              <li className="d-flex flex-row">
-                <div id="current-wind">
-                  {weatherData.current.wind_speed.toFixed(0)}
-                </div>
-                <p>Wind Speed (MPH)</p>
-              </li>
-              <li className="d-flex flex-row">
-                <div id="current-humidity">
-                  {weatherData.current.humidity}
-                  <span className="percent-symbol">%</span>
-                </div>
-                <p>Humidity </p>
-              </li>
-            </ol>
-          )}
-        </div>
-
-        <div className="row">
-          <h3>5-Day Forecast:</h3>
-          {loading ? (
-            <div>Loading weather data...</div>
-          ) : (
-            <ol id="forecast-weather" className="forecast column">
-              {weatherData.daily.slice(0, 5).map((day, index) => {
-                return (
-                  <li key={index} className="column border">
-                    <h5>{moment.unix(day.dt).format("L")}</h5>
-                    <p>Hi: {day.temp.max}</p>
-                    <p>Low: {day.temp.min}</p>
-                  </li>
-                );
-              })}
-            </ol>
-          )}
-        </div>
-      </section>
+      </main>
     </div>
   );
 }

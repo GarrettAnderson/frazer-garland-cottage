@@ -83,14 +83,12 @@ export default function ProjectList() {
 
   return (
     <section className="projects-container">
-      <header>
-        <div className="site-navigation">
-          {/* Navigation menus */}
-          <Hamburger onClick={toggleHamburger} />
-          <MobileNav toggleNav={hamburgerOpen} />
-          <DesktopNav />
-        </div>
-      </header>
+      <nav className="site-navigation">
+        {/* Navigation menus */}
+        <Hamburger onClick={toggleHamburger} />
+        <MobileNav toggleNav={hamburgerOpen} />
+        <DesktopNav />
+      </nav>
 
       <section className="project-status-container">
         {/* To Do Projects */}

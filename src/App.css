@@ -14,35 +14,30 @@
   background-color: #e5f1f9;  
 } 
 
-.App-header {
-  /* background-image: url(../src/assets/images/cottage.png); */
-  /* background-color: rgba(0, 0, 0, 0.5); */
+.App-hero {
   display: flex;
-  flex-direction: column;
-  /* align-items: center; */
+  align-items: center;
   justify-content: space-between;
   color: #f3fffb;
-  height: 12rem;
-  background-size: cover;
 }
 
-.App-header h1,
-.App-header h2 {
+.App-hero h1,
+.App-hero h2 {
   text-align: center;
 }
 
-.App-header h1 {
+.App-hero h1 {
   font-family: "Beachfly", serif;
   font-size: 3.5rem;
   font-weight: bolder;
 }
 
-.App-header h2 {
+.App-hero h2 {
   font-size: 0.75rem;
   font-weight: bolder;
 }
 
-.App-header h2 {
+.App-hero h2 {
   font-size: 12px;
   font-weight: bolder;
 }
@@ -52,7 +47,7 @@
 }
 
 .site-navigation {
-  margin: 1rem;
+  margin: 0rem 1rem;
 }
 
 .current-weather {
@@ -195,5 +190,15 @@
   .current-weather ol li:last-child {
     flex-direction: column !important;
     justify-content: center;
+  }
+}
+
+
+@media screen and (min-width: 600px) {
+  .App-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #f3fffb;
   }
 }

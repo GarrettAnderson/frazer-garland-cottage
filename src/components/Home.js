@@ -3,6 +3,7 @@ import moment from "moment";
 import MobileNav from "./Navigation/MobileNav";
 import Hamburger from "./Navigation/Hamburger";
 import DesktopNav from "./Navigation/DesktopNav";
+import CottageImg from "../assets/images/cottage.png"
 import "../App.css";
 
 export default function Home() {
@@ -10,12 +11,12 @@ export default function Home() {
   let [loading, setLoading] = useState(true);
   const lat = 41.553223;
   const long = -70.608589;
-  let apiKey = '189a38ae6bf0bf147aa5670c0b4b70d5' // process.env.REACT_APP_OPEN_WEATHER_API_KEY;
+  let apiKey = "189a38ae6bf0bf147aa5670c0b4b70d5"; // process.env.REACT_APP_OPEN_WEATHER_API_KEY;
 
   // create a useCallback or useMemo function for the fetch to the weather api and put that function in the useEffect
 
   useEffect(() => {
-   // console.log(process.env.OPEN_WEATHER_API_KEY);
+    // console.log(process.env.OPEN_WEATHER_API_KEY);
     const fetchWeather = async () => {
       // fetch weather data with lat and long variables
       fetch(
@@ -49,15 +50,22 @@ export default function Home() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <div className="site-navigation">
-          {/* Navigation menus */}
-          <Hamburger onClick={toggleHamburger} />
-          <MobileNav toggleNav={hamburgerOpen} />
-          <DesktopNav />
-        </div>
-        <h1>The Cottage</h1>
-        <h2>Frazer-Garland Trust</h2>
+      <nav className="site-navigation">
+        {/* Navigation menus */}
+        <Hamburger onClick={toggleHamburger} />
+        <MobileNav toggleNav={hamburgerOpen} />
+        <DesktopNav />
+      </nav>
+      <header className="App-hero">
+        <section>
+          <h1>The Cottage</h1>
+          <h2>Frazer-Garland Trust</h2>
+        </section>
+        <section>
+          <img
+            src={CottageImg}
+          />
+        </section>
       </header>
       <section className="weather-container container col-12 col-md-9 col-lg-9 w-90">
         <div className="current-weather row container">

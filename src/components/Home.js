@@ -3,8 +3,8 @@ import moment from "moment";
 import MobileNav from "./Navigation/MobileNav";
 import Hamburger from "./Navigation/Hamburger";
 import DesktopNav from "./Navigation/DesktopNav";
-import CottageImg from "../assets/images/cottage.png"
-import "../App.css";
+import CottageImg from "../assets/images/cottage.png";
+import "../assets/styles/Home.css";
 
 export default function Home() {
   let [weatherData, setWeatherData] = useState({});
@@ -61,10 +61,8 @@ export default function Home() {
           <h1>The Cottage</h1>
           <h2>Frazer-Garland Trust</h2>
         </section>
-        <section>
-          <img
-            src={CottageImg}
-          />
+        <section className="hero-img_hidden-on-mbile">
+          <img src={CottageImg} />
         </section>
       </header>
       <section className="weather-container container col-12 col-md-9 col-lg-9 w-90">

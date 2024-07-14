@@ -16,7 +16,7 @@ export default function MobileNav(props) {
             to="/"
             exact
           >
-            Home
+            HOME
           </NavLink>
         </li>
         <li>
@@ -26,19 +26,19 @@ export default function MobileNav(props) {
             to="/availability"
             exact
           >
-            Availability
+            AVAILABILITY
           </NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink
             className="navbar-link"
             activeClassName="is-active"
             to="/records"
             exact
           >
-            Management Records
+            MANAGEMENT RECORDS
           </NavLink>
-        </li>
+        </li> */}
         <li>
           <NavLink
             className="navbar-link"
@@ -46,7 +46,7 @@ export default function MobileNav(props) {
             to="/projects"
             exact
           >
-            Projects
+            PROJECTS
           </NavLink>
         </li>
       </ul>

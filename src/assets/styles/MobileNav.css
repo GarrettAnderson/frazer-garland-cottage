@@ -16,6 +16,12 @@
   text-decoration: none;
 }
 
+.navbar-link {
+  font-family: "Beachfly", serif;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
 @media (min-width: 767px) {
   .desktop-navigation {
     display: inline;

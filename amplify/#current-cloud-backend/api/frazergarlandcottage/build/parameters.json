@@ -1,0 +1,7 @@
+{
+    "AppSyncApiName": "frazergarlandcottage",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "S3DeploymentBucket": "amplify-frazergarlandcottage-dev-7a95b-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/19c179cd7ee8717e91f42810253fdc1120bd0339"
+}

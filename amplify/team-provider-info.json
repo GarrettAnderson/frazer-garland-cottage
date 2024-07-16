@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-frazergarlandcottage-dev-7a95b-authRole",
+      "UnauthRoleArn": "arn:aws:iam::767398063654:role/amplify-frazergarlandcottage-dev-7a95b-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::767398063654:role/amplify-frazergarlandcottage-dev-7a95b-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-frazergarlandcottage-dev-7a95b-deployment",
+      "UnauthRoleName": "amplify-frazergarlandcottage-dev-7a95b-unauthRole",
+      "StackName": "amplify-frazergarlandcottage-dev-7a95b",
+      "StackId": "arn:aws:cloudformation:us-east-1:767398063654:stack/amplify-frazergarlandcottage-dev-7a95b/472bd3f0-3bec-11ef-a696-120427d7da73",
+      "AmplifyAppId": "d2tgqacpd9gxx"
+    },
+    "categories": {
+      "api": {
+        "frazergarlandcottage": {}
+      }
+    }
+  }
+}

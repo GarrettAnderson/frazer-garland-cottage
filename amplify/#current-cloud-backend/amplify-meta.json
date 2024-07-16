@@ -1,0 +1,44 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-frazergarlandcottage-dev-7a95b-authRole",
+      "UnauthRoleArn": "arn:aws:iam::767398063654:role/amplify-frazergarlandcottage-dev-7a95b-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::767398063654:role/amplify-frazergarlandcottage-dev-7a95b-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-frazergarlandcottage-dev-7a95b-deployment",
+      "UnauthRoleName": "amplify-frazergarlandcottage-dev-7a95b-unauthRole",
+      "StackName": "amplify-frazergarlandcottage-dev-7a95b",
+      "StackId": "arn:aws:cloudformation:us-east-1:767398063654:stack/amplify-frazergarlandcottage-dev-7a95b/472bd3f0-3bec-11ef-a696-120427d7da73",
+      "AmplifyAppId": "d2tgqacpd9gxx"
+    }
+  },
+  "api": {
+    "frazergarlandcottage": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 365,
+              "apiKeyExpirationDate": "2025-07-06T23:22:12.788Z",
+              "description": ""
+            }
+          },
+          "additionalAuthenticationProviders": []
+        },
+        "GraphQLAPIIdOutput": "kdo5ufdlwrh3lc24ppvjbtqzgq",
+        "GraphQLAPIEndpointOutput": "https://cq5yeqxoczfbnplxsjb7sxos3i.appsync-api.us-east-1.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-u7uat2tslfeelkmmbzmmqau3oq"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-frazergarlandcottage-dev-7a95b-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apifrazergarlandcottage"
+      },
+      "lastPushTimeStamp": "2024-07-06T23:39:09.037Z",
+      "lastPushDirHash": "8JOjeIP/fjzr0QKaovAXfOKaeDE="
+    }
+  }
+}

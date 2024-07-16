@@ -24,7 +24,10 @@
 
 @media (min-width: 767px) {
   .desktop-navigation {
-    display: inline;
+    display: block;
+    width: 80%;
+    max-width: 1250px;
+    margin: 0 auto;
   }
 
   .desktop-navigation ul {

@@ -10,7 +10,8 @@ export default function Home() {
   let [loading, setLoading] = useState(true);
   const lat = 41.553223;
   const long = -70.608589;
-  let apiKey = process.env.REACT_APP_OPEN_WEATHER_API_KEY;
+  // const apiKey = process.env.REACT_APP_OPEN_WEATHER_API_KEY;
+  const apiKey = "189a38ae6bf0bf147aa5670c0b4b70d5";
 
   // create a useCallback or useMemo function for the fetch to the weather api and put that function in the useEffect
 

@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Beachfly";
-  src: url("../fonts/Beachfly_Free_Trial.otf");
+  src: url("../fonts/Beachfly_Free_Trial.woff2");
+  src: url("../fonts/Beachfly_Free_Trial.woff");
 }
 
 .App-container {

@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Beachfly";
-  src: url("../../assets/fonts/Beachfly.woff");
-  src: url("../../assets/fonts/Beachfly.woff2");
+  src: url("../../assets/fonts/Beachfly.woff") format("woff"),
+    url("../../assets/fonts/Beachfly.woff2") format("woff2");
 }
 
 .App-container {

@@ -15,36 +15,32 @@
   height: 100%;
 }
 
-.App-hero {
+.landing_main-content {
   background-image: url("../images/cottage.png");
   background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 3rem auto 0 auto;
-  color: #f3fffb;
-  height: 20rem;
-  width: 22rem;
-  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
 }
 
-.App-hero section:first-child {
+.landing_main-content section:first-child {
   margin: 0 auto;
   text-align: center;
 }
 
-.App-hero h1 {
+.landing_main-content h1 {
   font-family: "Beachfly", serif;
   font-size: 3.5rem;
   font-weight: bolder;
 }
 
-.App-hero h2 {
+.landing_main-content h2 {
   font-size: 1.5rem;
   font-weight: 500;
 }
 
-.App-hero img {
+.landing_main-content img {
   display: none;
 }
 
@@ -70,7 +66,7 @@
 }
 
 @media screen and (min-width: 767px) {
-  .App-hero {
+  .landing_main-content {
     display: flex;
     align-items: center;
     justify-content: space-between;

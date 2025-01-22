@@ -52,12 +52,6 @@ export default function Home() {
 
   return (
     <div className="landing_home-page">
-      <nav className="site-navigation">
-        {/* Navigation menus */}
-        <Hamburger onClick={toggleHamburger} />
-        <MobileNav toggleNav={hamburgerOpen} />
-        <DesktopNav />
-      </nav>
       {/* <header>
         <section className="weather-container container col-12 col-md-9 col-lg-9 w-90">
           <div className="current-weather row container">
@@ -70,14 +64,17 @@ export default function Home() {
           <WeatherForecast loading={loading} weatherData={weatherData} />
         </section>
       </header> */}
-      <main className="App-hero">
+      <main className="landing_main-content">
+        <nav className="site-navigation">
+          {/* Navigation menus */}
+          <Hamburger onClick={toggleHamburger} />
+          <MobileNav toggleNav={hamburgerOpen} />
+          <DesktopNav />
+        </nav>
         <section>
           <h1>The Cottage</h1>
           <h2>Falmouth, MA</h2>
           {/* <h2>Frazer-Garland Trust</h2> */}
-        </section>
-        <section className="hero-img_hidden-on-mbile">
-          <img src={CottageImg} />
         </section>
       </main>
     </div>

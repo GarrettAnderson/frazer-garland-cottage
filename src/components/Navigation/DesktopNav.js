@@ -23,7 +23,7 @@ export default function DesktopNav(props) {
             to="/availability"
             exact
           >
-            Availability
+            Weather
           </NavLink>
         </li>
         <li>
@@ -33,9 +33,19 @@ export default function DesktopNav(props) {
             to="/records"
             exact
           >
-            Management Records
+            Projects
           </NavLink>
         </li>
+        {/* <li>
+          <NavLink
+            className="navbar-link"
+            activeClassName="is-active"
+            to="/records"
+            exact
+          >
+            Management Records
+          </NavLink>
+        </li> */}
         <li>
           <NavLink
             className="navbar-link"
@@ -43,7 +53,7 @@ export default function DesktopNav(props) {
             to="/projects"
             exact
           >
-            Projects
+            availability
           </NavLink>
         </li>
       </ul>

@@ -12,10 +12,6 @@
 }
 
 .landing_home-page {
-  height: 100%;
-}
-
-.landing_main-content {
   background-image: url("../images/cottage.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,35 +20,8 @@
   height: 100vh;
 }
 
-.landing_main-content section:first-child {
-  margin: 0 auto;
-  text-align: center;
-}
-
-.landing_main-content h1 {
-  font-family: "Beachfly", serif;
-  font-size: 3.5rem;
-  font-weight: bolder;
-}
-
-.landing_main-content h2 {
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-
-.landing_main-content img {
-  display: none;
-}
-
 .App-link {
   color: #61dafb;
-}
-
-.site-navigation {
-  margin: 0rem 1rem 0 2rem;
-  height: 9%;
-  display: flex;
-  align-items: center;
 }
 
 .availability-container {
@@ -71,5 +40,128 @@
     align-items: center;
     justify-content: space-between;
     color: #f3fffb;
+    height: 100%;
+  }
+  .landing_main-content_left::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 234, 151, 0.5);
+    z-index: 1;
+  }
+
+  .landing_main-content_right::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(34, 61, 60, 0.5);
+    z-index: 1;
+  }
+
+  /* .landing_main-content section:first-child {
+  margin: 0 auto;
+  text-align: center;
+} */
+
+  .landing_main-content_left {
+    width: 50%;
+  }
+
+  .landing_main-content_left h1 {
+    font-family: "Beachfly", serif;
+    font-size: 3.5rem;
+    font-weight: bolder;
+  }
+
+  .landing_main-content_left h2 {
+    font-family: "Roboto", serif;
+    font-size: 1.5rem;
+    font-weight: 200;
+  }
+
+  .landing_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    position: relative;
+  }
+  .landing_main-content_left::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 234, 151, 0.5);
+    z-index: 1;
+  }
+
+  .landing_main-content_right::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(34, 61, 60, 0.5);
+    z-index: 1;
+  }
+
+  /* .landing_main-content section:first-child {
+  margin: 0 auto;
+  text-align: center;
+} */
+
+  .landing_main-content_left {
+    width: 50%;
+  }
+
+  .landing_main-content_left h1 {
+    font-family: "Beachfly", serif;
+    font-size: 3.5rem;
+    font-weight: bolder;
+    z-index: 1;
+  }
+
+  /* .landing_main-content_left h2 {
+    font-family: "Roboto", serif;
+    font-size: 1.5rem;
+    font-weight: 200;
+  } */
+
+  /* Right Half of the home page */
+  .desktop-navigation > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .desktop-navigation > ul > li {
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .desktop-navigation > ul > li > a {
+    color: #fff;
+    z-index: 1;
+    text-decoration: none;
+  }
+
+  .landing_main-content_right {
+    width: 50%;
   }
 }

@@ -75,8 +75,8 @@ export default function Home() {
         <section className="landing_main-content_right">
           {/* Navigation menus */}
           <nav className="site-navigation">
-            <Hamburger onClick={toggleHamburger} />
-            <MobileNav toggleNav={hamburgerOpen} />
+            {/* <Hamburger onClick={toggleHamburger} />
+            <MobileNav toggleNav={hamburgerOpen} /> */}
             <DesktopNav />
           </nav>
         </section>

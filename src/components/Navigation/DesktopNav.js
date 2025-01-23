@@ -53,7 +53,7 @@ export default function DesktopNav(props) {
             to="/projects"
             exact
           >
-            availability
+            Availability
           </NavLink>
         </li>
       </ul>

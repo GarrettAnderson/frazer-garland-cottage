@@ -1,3 +1,4 @@
+/*
 .desktop-navigation {
   display: none;
 }
@@ -42,8 +43,8 @@
     padding: 0px 25px;
   }
 
-  /* .mobile-navigation ul li {
+ .mobile-navigation ul li {
     list-style-type: none;
     padding-right: 10px;
-  } */
-}
+  } 
+} */

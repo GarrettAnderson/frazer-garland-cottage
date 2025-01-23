@@ -68,7 +68,7 @@ export default function Home() {
         <section className="landing_main-content_left">
           <section className="landing_title">
             <h1>The Cottage</h1>
-            <h2>Falmouth, MA</h2>
+            {/* <h2>Falmouth, MA</h2> */}
             {/* <h2>Frazer-Garland Trust</h2> */}
           </section>
         </section>

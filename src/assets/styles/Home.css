@@ -111,7 +111,9 @@
   justify-content: center;
   position: relative;
   width: 70%;
+  max-width: 300px;
   margin: 0 auto;
+  padding: 0;
 }
 
 .desktop-navigation > ul > li {

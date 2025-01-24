@@ -6,7 +6,7 @@ export default function DesktopNav(props) {
   return (
     <div className="desktop-navigation">
       <ul>
-        <li>
+        {/* <li>
           <NavLink
             className="navbar-link"
             activeClassName="is-active"
@@ -15,7 +15,7 @@ export default function DesktopNav(props) {
           >
             Home
           </NavLink>
-        </li>
+        </li> */}
         <li>
           <NavLink
             className="navbar-link"

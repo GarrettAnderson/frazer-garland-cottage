@@ -51,7 +51,7 @@ export default function Home() {
   };
 
   return (
-    <div className="landing_home-page">
+    <div className="universal_background-img landing_home-page">
       {/* <header>
         <section className="weather-container container col-12 col-md-9 col-lg-9 w-90">
           <div className="current-weather row container">

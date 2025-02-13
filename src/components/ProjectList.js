@@ -19,7 +19,7 @@ export default function ProjectList() {
   // let [projectInProgress, addInProgress] = useState([]);
   // let [projectCompleted, addCompleted] = useState([]);
 
-  console.log(projects);
+  console.log(projects.cottage_projects);
 
   // Get the projects from the API endpoint
   // useEffect(() => {
@@ -88,12 +88,12 @@ export default function ProjectList() {
       <section className="section-container to-do-projects">
         <h1>To Do</h1>
         <ol>
-          {projectToDo.map((project, i) => {
+          {/* {projectToDo.map((project, i) => {
             return (
               <li key={i}>
                 <div className="card">
                   <div className="card-body project-card-details">
-                    {/* <h5 className="card-title">{project.ProjectTitle}</h5> */}
+                  <h5 className="card-title">{project.ProjectTitle}</h5>
                     <p className="card-text">{project.project_details}</p>
                     <FontAwesomeIcon
                       icon={faTrash}
@@ -105,7 +105,7 @@ export default function ProjectList() {
                 </div>
               </li>
             );
-          })}
+          })} */}
         </ol>
 
         {/* open model to add card */}
@@ -117,7 +117,7 @@ export default function ProjectList() {
       <section className="section-container in-progress-projects">
         <h1>In Progress</h1>
         <ol>
-          {projectInProgress.map((project, i) => {
+          {/* {projectInProgress.map((project, i) => {
             return (
               <li key={i}>
                 <div className="card">
@@ -128,14 +128,14 @@ export default function ProjectList() {
                 </div>
               </li>
             );
-          })}
+          })} */}
         </ol>
       </section>
       {/* Projects Completed Section */}
       <section className="section-container completed-projects">
         <h1>Completed</h1>
         <ol>
-          {projectCompleted.map((project, i) => {
+          {/* {projectCompleted.map((project, i) => {
             return (
               <li key={i}>
                 <div className="card">
@@ -146,12 +146,12 @@ export default function ProjectList() {
                 </div>
               </li>
             );
-          })}
+          })} */}
         </ol>
       </section>
 
       {/* Add project modal */}
-      <Modal show={show} onHide={handleClose}>
+      {/* <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Add To Do</Modal.Title>
         </Modal.Header>
@@ -176,7 +176,7 @@ export default function ProjectList() {
             Add To Do
           </Button>
         </Modal.Footer>
-      </Modal>
+      </Modal> */}
     </section>
   );
 }

@@ -3,6 +3,7 @@ import { Modal, Button, Form } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/fontawesome-free-solid";
 import "../assets/styles/Projects.css";
+import Projects from "../../src/assets/data/projects.json";
 import axios from "axios";
 
 export default function ProjectList() {
@@ -11,71 +12,74 @@ export default function ProjectList() {
   const [projectDescription, setProjectDescription] = useState();
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  // project lists
 
-  let [projectToDo, addToDo] = useState([]);
-  let [projectInProgress, addInProgress] = useState([]);
-  let [projectCompleted, addCompleted] = useState([]);
+  // project lists
+  const [projects, addProject] = useState(Projects);
+  // let [projectToDo, addToDo] = useState([]);
+  // let [projectInProgress, addInProgress] = useState([]);
+  // let [projectCompleted, addCompleted] = useState([]);
+
+  console.log(projects);
 
   // Get the projects from the API endpoint
-  useEffect(() => {
-    console.log("test");
-    axios
-      .get("http://localhost:3001/api/projects", {
-        headers: {
-          "Access-Control-Allow-Origin": "*",
-          "Access-Control-Allow-Methods": "POST, GET, PUT",
-          "Access-Control-Allow-Headers": "Content-Type",
-          "Content-Type": "application/json",
-          mode: "cors",
-        },
-      })
-      .then((response) => {
-        console.log(response.data.data);
-        addToDo(response.data.data);
-      })
-      .catch((error) => {
-        console.error("Error fetching data");
-        throw error;
-      });
-  }, []);
+  // useEffect(() => {
+  //   console.log("test");
+  //   axios
+  //     .get("http://localhost:3001/api/projects", {
+  //       headers: {
+  //         "Access-Control-Allow-Origin": "*",
+  //         "Access-Control-Allow-Methods": "POST, GET, PUT",
+  //         "Access-Control-Allow-Headers": "Content-Type",
+  //         "Content-Type": "application/json",
+  //         mode: "cors",
+  //       },
+  //     })
+  //     .then((response) => {
+  //       console.log(response.data.data);
+  //       addToDo(response.data.data);
+  //     })
+  //     .catch((error) => {
+  //       console.error("Error fetching data");
+  //       throw error;
+  //     });
+  // }, []);
 
   // Add project to the to do array and close the modal
-  const addProjectToDo = (e) => {
-    console.log(projectDescription);
-    // addToDo([...projectToDo, { Details: projectDescription }]);
-    // console.log(projectToDo);
+  // const addProjectToDo = (e) => {
+  //   console.log(projectDescription);
+  // addToDo([...projectToDo, { Details: projectDescription }]);
+  // console.log(projectToDo);
 
-    axios
-      .post("http://localhost:3001/api/new-project", {
-        project_details: projectDescription,
-      })
-      .then((response) => {
-        console.log(response);
-      })
-      .catch((error) => {
-        console.error(error);
-      });
+  //   axios
+  //     .post("http://localhost:3001/api/new-project", {
+  //       project_details: projectDescription,
+  //     })
+  //     .then((response) => {
+  //       console.log(response);
+  //     })
+  //     .catch((error) => {
+  //       console.error(error);
+  //     });
 
-    handleClose();
-    window.location.reload();
-  };
+  //   handleClose();
+  //   window.location.reload();
+  // };
 
   // Delete a project from database
-  const deleteProject = (id) => {
-    console.log("Delete project:", id);
+  // const deleteProject = (id) => {
+  //   console.log("Delete project:", id);
 
-    axios
-      .delete(`http://localhost:3001/api/project/${id}`)
-      .then((response) => {
-        console.log(response);
-      })
-      .catch((error) => {
-        console.error(error);
-      });
+  //   axios
+  //     .delete(`http://localhost:3001/api/project/${id}`)
+  //     .then((response) => {
+  //       console.log(response);
+  //     })
+  //     .catch((error) => {
+  //       console.error(error);
+  //     });
 
-    window.location.reload();
-  };
+  //   window.location.reload();
+  // };
 
   return (
     <section className="projects-container">

@@ -82,7 +82,7 @@ export default function ProjectList() {
   // };
 
   return (
-    <section className="projects-container">
+    <section className="universal_background-img projects_main-content">
       {/* To Do Projects */}
 
       <section className="section-container to-do-projects">

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Modal, Button, Form } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/fontawesome-free-solid";
+import "../assets/styles/Home.css";
 import "../assets/styles/Projects.css";
 import Projects from "../../src/assets/data/projects.json";
 import axios from "axios";
@@ -84,11 +85,13 @@ export default function ProjectList() {
   return (
     <section className="universal_background-img projects_main-content">
       {/* To Do Projects */}
-
+      <section className="projects_title">
+        <h1>Projects</h1>
+      </section>
       <section className="section-container to-do-projects">
         <h1>To Do</h1>
-        {/* <ol> */}
-        {/* {projectToDo.map((project, i) => {
+        <ol>
+          {/* {projectToDo.map((project, i) => {
             return (
               <li key={i}>
                 <div className="card">
@@ -106,7 +109,7 @@ export default function ProjectList() {
               </li>
             );
           })} */}
-        {/* </ol> */}
+        </ol>
 
         {/* open model to add card */}
         {/* <button className="btn" onClick={handleShow}>

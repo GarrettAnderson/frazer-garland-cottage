@@ -17,31 +17,31 @@ export default function Home() {
 
   // create a useCallback or useMemo function for the fetch to the weather api and put that function in the useEffect
 
-  useEffect(() => {
-    // console.log(process.env.OPEN_WEATHER_API_KEY);
-    const fetchWeather = async () => {
-      // fetch weather data with lat and long variables
-      fetch(
-        `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${long}&exclude=minutely,hourly,alerts&appid=${apiKey}&units=imperial`
-      )
-        .then((response) => {
-          console.log(response);
-          return response.json();
-        })
-        .then((data) => {
-          setWeatherData(data);
-          console.log(data);
-          // console.log(data);
-        })
-        .catch((err) => {
-          console.log(err);
-        })
-        .finally(() => {
-          setLoading(false);
-        });
-    };
-    fetchWeather();
-  }, [lat, long]);
+  // useEffect(() => {
+  //   // console.log(process.env.OPEN_WEATHER_API_KEY);
+  //   const fetchWeather = async () => {
+  //     // fetch weather data with lat and long variables
+  //     fetch(
+  //       `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${long}&exclude=minutely,hourly,alerts&appid=${apiKey}&units=imperial`
+  //     )
+  //       .then((response) => {
+  //         console.log(response);
+  //         return response.json();
+  //       })
+  //       .then((data) => {
+  //         setWeatherData(data);
+  //         console.log(data);
+  //         // console.log(data);
+  //       })
+  //       .catch((err) => {
+  //         console.log(err);
+  //       })
+  //       .finally(() => {
+  //         setLoading(false);
+  //       });
+  //   };
+  //   fetchWeather();
+  // }, [lat, long]);
 
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
 

@@ -87,8 +87,8 @@ export default function ProjectList() {
 
       <section className="section-container to-do-projects">
         <h1>To Do</h1>
-        <ol>
-          {/* {projectToDo.map((project, i) => {
+        {/* <ol> */}
+        {/* {projectToDo.map((project, i) => {
             return (
               <li key={i}>
                 <div className="card">
@@ -106,12 +106,12 @@ export default function ProjectList() {
               </li>
             );
           })} */}
-        </ol>
+        {/* </ol> */}
 
         {/* open model to add card */}
-        <button className="btn" onClick={handleShow}>
+        {/* <button className="btn" onClick={handleShow}>
           + Add Card
-        </button>
+        </button> */}
       </section>
       {/* Projects In Progress Section */}
       <section className="section-container in-progress-projects">

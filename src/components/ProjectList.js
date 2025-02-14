@@ -91,24 +91,24 @@ export default function ProjectList() {
       <section className="section-container to-do-projects">
         <h1>To Do</h1>
         <ol>
-          {/* {projectToDo.map((project, i) => {
+          {projects.cottage_projects.map((project, i) => {
             return (
               <li key={i}>
                 <div className="card">
                   <div className="card-body project-card-details">
-                  <h5 className="card-title">{project.ProjectTitle}</h5>
-                    <p className="card-text">{project.project_details}</p>
+                    <h5 className="card-title">{project.title}</h5>
+                    {/* <p className="card-text">{project.project_details}</p>
                     <FontAwesomeIcon
                       icon={faTrash}
                       onClick={() => {
                         deleteProject(project.id);
                       }}
-                    />
+                    /> */}
                   </div>
                 </div>
               </li>
             );
-          })} */}
+          })}
         </ol>
 
         {/* open model to add card */}

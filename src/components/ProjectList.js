@@ -92,7 +92,7 @@ export default function ProjectList() {
         <h1>To Do</h1>
         <ol>
           {projects.cottage_projects.map((project, i) =>
-            projects.status === "Scheduled" ? (
+            project.status === "Scheduled" ? (
               <li key={i}>
                 <div className="card">
                   <div className="card-body project-card-details">
@@ -108,7 +108,7 @@ export default function ProjectList() {
                 </div>
               </li>
             ) : (
-              <dive></dive>
+              <div></div>
             )
           )}
         </ol>
@@ -123,7 +123,7 @@ export default function ProjectList() {
         <h1>In Progress</h1>
         <ol>
           {projects.cottage_projects.map((project, i) =>
-            projects.status === "In Progress" ? (
+            project.status === "In Progress" ? (
               <li key={i}>
                 <div className="card">
                   <div className="card-body">

@@ -6,34 +6,40 @@
       "date": "Dec 2024"
     },
     {
-      "name": "Fix window screens",
+      "title": "Fix window screens",
       "status": "Scheduled",
       "date": "June 2025"
     },
     {
-      "name": "Fix front door screen",
+      "title": "Fix front door screen",
       "status": "Scheduled",
       "date": "June 2025"
     },
     {
-      "name": "Fence/landscaping",
+      "title": "Fence/landscaping",
       "status": "Scheduled",
       "date": "June 2025"
     },
     {
-      "name": "Landscaping roadside",
+      "title": "Landscaping roadside",
       "status": "Scheduled",
       "date": "June 2025"
     },
     {
-      "name": "Blinds for front porch",
+      "title": "Blinds for front porch",
       "status": "Scheduled",
       "date": "June 2025"
     },
     {
-      "name": "Treat algae north side of cottage",
+      "title": "Treat algae north side of cottage",
       "status": "Scheduled",
       "date": "June 2025"
+    },
+    {
+      "title": "Website",
+      "status": "In Progress",
+      "date": "January 2025",
+      "due-date": "April 2025"
     }
   ]
 }

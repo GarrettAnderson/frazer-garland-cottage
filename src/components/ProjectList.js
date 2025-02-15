@@ -91,8 +91,8 @@ export default function ProjectList() {
       <section className="section-container to-do-projects">
         <h1>To Do</h1>
         <ol>
-          {projects.cottage_projects.map((project, i) => {
-            return (
+          {projects.cottage_projects.map((project, i) =>
+            projects.status === "Scheduled" ? (
               <li key={i}>
                 <div className="card">
                   <div className="card-body project-card-details">
@@ -107,8 +107,10 @@ export default function ProjectList() {
                   </div>
                 </div>
               </li>
-            );
-          })}
+            ) : (
+              <dive></dive>
+            )
+          )}
         </ol>
 
         {/* open model to add card */}
@@ -120,36 +122,40 @@ export default function ProjectList() {
       <section className="section-container in-progress-projects">
         <h1>In Progress</h1>
         <ol>
-          {/* {projectInProgress.map((project, i) => {
-            return (
+          {projects.cottage_projects.map((project, i) =>
+            projects.status === "In Progress" ? (
               <li key={i}>
                 <div className="card">
                   <div className="card-body">
-                    <h5 className="card-title">{project.ProjectTitle}</h5>
-                    <p className="card-text">{project.Details}</p>
+                    <h5 className="card-title">{project.title}</h5>
+                    {/* <p className="card-text">{project.Details}</p> */}
                   </div>
                 </div>
               </li>
-            );
-          })} */}
+            ) : (
+              <div></div>
+            )
+          )}
         </ol>
       </section>
       {/* Projects Completed Section */}
       <section className="section-container completed-projects">
         <h1>Completed</h1>
         <ol>
-          {/* {projectCompleted.map((project, i) => {
-            return (
+          {projects.cottage_projects.map((project, i) =>
+            project.status === "Completed" ? (
               <li key={i}>
                 <div className="card">
                   <div className="card-body">
-                    <h5 className="card-title">{project.ProjectTitle}</h5>
-                    <p className="card-text">{project.Details}</p>
+                    <h5 className="card-title">{project.title}</h5>
+                    {/* <p className="card-text">{project.Details}</p> */}
                   </div>
                 </div>
               </li>
-            );
-          })} */}
+            ) : (
+              <div></div>
+            )
+          )}
         </ol>
       </section>
 

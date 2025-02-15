@@ -20,10 +20,10 @@ export default function DesktopNav(props) {
           <NavLink
             className="navbar-link"
             activeClassName="is-active"
-            to="/"
+            to="/forecast"
             exact
           >
-            Weather
+            Forecast
           </NavLink>
         </li>
         <li>

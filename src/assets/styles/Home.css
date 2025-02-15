@@ -4,6 +4,14 @@
     url("../../assets/fonts/Beachfly.woff2") format("woff2");
 }
 
+.desktop-navigation {
+  display: none;
+}
+
+.mobile-navigation {
+  display: inline;
+}
+
 .App-container {
   position: absolute;
   width: 100vw;
@@ -157,6 +165,14 @@
 }
 
 @media screen and (min-width: 767px) {
+  .desktop-navigation {
+    display: inline;
+  }
+
+  .mobile-navigation {
+    display: none;
+  }
+
   .landing_main-content {
     display: flex;
     align-items: center;

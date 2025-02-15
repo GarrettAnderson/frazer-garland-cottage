@@ -78,6 +78,7 @@ export default function Home() {
             {/* <Hamburger onClick={toggleHamburger} />
             <MobileNav toggleNav={hamburgerOpen} /> */}
             <DesktopNav />
+            <MobileNav />
           </nav>
         </section>
       </main>

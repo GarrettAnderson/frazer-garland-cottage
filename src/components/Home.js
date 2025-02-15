@@ -71,6 +71,10 @@ export default function Home() {
             <DesktopNav />
           </nav>
         </section>
+        <section class="landing_footer">
+          <h4>The Frazer-Garland Trust</h4>
+          <h5>East Falmouth, Cape Code</h5>
+        </section>
       </main>
     </div>
   );

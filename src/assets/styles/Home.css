@@ -83,6 +83,17 @@
   z-index: 1;
 }
 
+.site-navigation {
+  width: 75%;
+}
+
+.landing_main-content_right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65%;
+}
+
 .landing_main-content_right::before {
   content: "";
   position: absolute;
@@ -169,6 +180,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.landing_footer {
+  height: 15%;
+}
+
+.landing_footer::before {
+  content: "";
+  position: absolute;
+  top: 85%;
+  width: 100%;
+  height: 15%;
+  background-color: rgba(34, 61, 60, 0.95);
+  z-index: 1;
 }
 
 @media screen and (min-width: 767px) {

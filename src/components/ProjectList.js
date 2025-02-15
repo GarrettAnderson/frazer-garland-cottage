@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/fontawesome-free-solid";
 import "../assets/styles/Home.css";
 import "../assets/styles/Projects.css";
+import MobileNav from "./Navigation/MobileNav";
+import Hamburger from "./Navigation/Hamburger";
 import Projects from "../../src/assets/data/projects.json";
 import axios from "axios";
 
@@ -21,6 +23,13 @@ export default function ProjectList() {
   // let [projectCompleted, addCompleted] = useState([]);
 
   console.log(projects.cottage_projects);
+
+  const [hamburgerOpen, setHamburgerOpen] = useState(false);
+
+  const toggleHamburger = (x) => {
+    console.log(x, "hamburger open");
+    setHamburgerOpen(!hamburgerOpen);
+  };
 
   // Get the projects from the API endpoint
   // useEffect(() => {
@@ -84,6 +93,11 @@ export default function ProjectList() {
 
   return (
     <section className="universal_background-img projects_main-content">
+      <nav class="landing_mobile-nav-container">
+        <Hamburger onClick={toggleHamburger} />
+        <MobileNav toggleNav={hamburgerOpen} />
+      </nav>
+
       {/* To Do Projects */}
       <section className="projects_title">
         <h1>Projects</h1>

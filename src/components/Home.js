@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import moment from "moment";
-import MobileNav from "./Navigation/MobileNav";
-import Hamburger from "./Navigation/Hamburger";
 import DesktopNav from "./Navigation/DesktopNav";
 import CottageImg from "../assets/images/cottage.png";
 import "../assets/styles/Home.css";
@@ -43,17 +41,10 @@ export default function Home() {
   //   fetchWeather();
   // }, [lat, long]);
 
-  const [hamburgerOpen, setHamburgerOpen] = useState(false);
-
-  const toggleHamburger = (x) => {
-    console.log(x, "hamburger open");
-    setHamburgerOpen(!hamburgerOpen);
-  };
-
   return (
     <div className="universal_background-img landing_home-page">
-      {/* <header>
-        <section className="weather-container container col-12 col-md-9 col-lg-9 w-90">
+      <header>
+        {/* <section className="weather-container container col-12 col-md-9 col-lg-9 w-90">
           <div className="current-weather row container">
             {loading ? (
               <div>Loading weather data...</div>
@@ -62,8 +53,8 @@ export default function Home() {
             )}
           </div>
           <WeatherForecast loading={loading} weatherData={weatherData} />
-        </section>
-      </header> */}
+        </section> */}
+      </header>
       <main className="landing_main-content">
         <section className="landing_main-content_left">
           <section className="landing_title">
@@ -72,13 +63,12 @@ export default function Home() {
             {/* <h2>Frazer-Garland Trust</h2> */}
           </section>
         </section>
+
+        {/* Right Section Hidden On Mobile View*/}
         <section className="landing_main-content_right">
           {/* Navigation menus */}
           <nav className="site-navigation">
-            <Hamburger onClick={toggleHamburger} />
-            <MobileNav toggleNav={hamburgerOpen} />
             <DesktopNav />
-            <MobileNav />
           </nav>
         </section>
       </main>

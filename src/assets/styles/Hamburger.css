@@ -1,4 +1,4 @@
-.hamburger {
+.mobile-nav_hamburger {
   width: 2rem;
   height: 2rem;
   display: flex;
@@ -17,7 +17,7 @@
 }
 
 @media (min-width: 767px) {
-  .hamburger {
+  .mobile-nav_hamburger {
     display: none;
   }
 }

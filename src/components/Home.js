@@ -5,6 +5,7 @@ import CottageImg from "../assets/images/cottage.png";
 import "../assets/styles/Home.css";
 import WeatherForecast from "./WeatherForecast";
 import { CurrentWeather } from "./CurrentWeather";
+import Footer from "./Footer";
 
 export default function Home() {
   let [weatherData, setWeatherData] = useState({});
@@ -71,11 +72,8 @@ export default function Home() {
             <DesktopNav />
           </nav>
         </section>
-        <section class="landing_footer">
-          <h4>The Frazer-Garland Trust</h4>
-          <h5>East Falmouth, Cape Code</h5>
-        </section>
       </main>
+      <Footer />
     </div>
   );
 }

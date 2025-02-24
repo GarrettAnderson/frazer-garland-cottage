@@ -1,0 +1,21 @@
+/* Footer Styles */
+
+.landing_footer {
+  z-index: 3;
+  color: #fff;
+  width: 100%;
+  background-color: rgba(54, 69, 79, 0.85);
+  position: absolute;
+  bottom: 0px;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing_footer h4,
+.landing_footer h5 {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+}

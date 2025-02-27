@@ -19,6 +19,11 @@
   overflow: scroll;
 }
 
+.projects-wrapper {
+  position: relative;
+  z-index: 3;
+}
+
 .projects_main-content::before {
   content: "";
   position: absolute;

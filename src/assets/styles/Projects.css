@@ -70,6 +70,10 @@
   color: #fff;
 }
 
+.card-title {
+  margin-bottom: 0;
+}
+
 .project-card-details {
   display: flex;
   justify-content: space-between;

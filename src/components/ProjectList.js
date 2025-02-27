@@ -8,6 +8,7 @@ import MobileNav from "./Navigation/MobileNav";
 import Hamburger from "./Navigation/Hamburger";
 import Projects from "../../src/assets/data/projects.json";
 import axios from "axios";
+import DesktopNav from "./Navigation/DesktopNav";
 
 export default function ProjectList() {
   // modal functionality
@@ -96,6 +97,7 @@ export default function ProjectList() {
       <nav class="landing_mobile-nav-container">
         <Hamburger onClick={toggleHamburger} />
         <MobileNav toggleNav={hamburgerOpen} />
+        <DesktopNav />
       </nav>
 
       {/* To Do Projects */}

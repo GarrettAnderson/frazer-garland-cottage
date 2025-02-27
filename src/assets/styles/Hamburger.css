@@ -12,7 +12,7 @@
 .burger {
   width: 2rem;
   height: 0.35rem;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   background-color: rgba(34, 61, 60, 1);
   transform-origin: 1px;
   transition: all 0.3s linear;

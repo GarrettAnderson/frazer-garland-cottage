@@ -4,7 +4,7 @@ import "../../assets/styles/MobileNav.css";
 
 export default function DesktopNav(props) {
   return (
-    <div className="desktop-navigation">
+    <div className="desktop-navigation internal_desktop-nav">
       <ul>
         {/* <li>
           <NavLink

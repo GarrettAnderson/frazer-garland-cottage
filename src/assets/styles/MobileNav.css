@@ -3,8 +3,10 @@
 }
 
 .mobile-navigation {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(34, 61, 60, 0.75);
   display: inline;
+  position: relative;
+  z-index: 3;
 }
 
 .mobile-navigation ul li {

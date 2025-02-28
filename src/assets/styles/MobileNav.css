@@ -1,10 +1,15 @@
-.landing_mobile-nav-container {
+.landing_mobile-nav-container,
+.internal_mobile-nav-container {
   width: 100%;
+}
+
+.mobile-nav_hamburger.open {
+  display: block;
 }
 
 .mobile-navigation {
   background-color: rgba(34, 61, 60, 0.75);
-  display: inline;
+  /* display: inline; */
   position: relative;
   z-index: 3;
 }
@@ -20,6 +25,10 @@
 }
 
 @media (min-width: 767px) {
+  .mobile-nav_hamburger {
+    display: none;
+  }
+
   .desktop-navigation {
     display: inline;
   }

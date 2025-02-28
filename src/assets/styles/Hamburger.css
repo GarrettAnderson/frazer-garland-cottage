@@ -1,4 +1,6 @@
-.mobile-nav_hamburger {
+.mobile-nav_hamburger,
+.internal_mobile-nav-container .mobile-nav_hamburger,
+#nav-icon3 {
   width: 2rem;
   height: 2rem;
   display: flex;
@@ -7,19 +9,115 @@
   z-index: 3;
   position: relative;
   margin: 1rem;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
 }
 
-.burger {
+.burger,
+#nav-icon3 span {
   width: 2rem;
   height: 0.35rem;
   /* border-radius: 10px; */
   background-color: rgba(34, 61, 60, 1);
   transform-origin: 1px;
-  transition: all 0.3s linear;
+  /*  transition: all 0.3s linear; */
+  display: block;
+  position: relative;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
-@media (min-width: 767px) {
-  .mobile-nav_hamburger {
-    display: none;
-  }
+.burger:nth-child(1) {
+  top: 0px;
+}
+
+.burger:nth-child(2),
+.burger:nth-child(3) {
+  top: 18px;
+}
+
+.burger:nth-child(4) {
+  top: 36px;
+}
+
+.mobile-nav_hamburger.open div:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.mobile-nav_hamburger.open div:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.mobile-nav_hamburger.open div:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.mobile-nav_hamburger.open div:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+/* Experimenting with hamburger nav animation */
+
+#nav-icon3 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon3 span:nth-child(2),
+#nav-icon3 span:nth-child(3) {
+  top: 18px;
+}
+
+#nav-icon3 span:nth-child(4) {
+  top: 36px;
+}
+
+#nav-icon3.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+#nav-icon3.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#nav-icon3.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#nav-icon3.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
 }

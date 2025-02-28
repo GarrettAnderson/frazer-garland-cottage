@@ -1,0 +1,15 @@
+/* Hide Desktop Nav on Mobile */
+
+.internal_desktop-nav {
+  display: none;
+}
+
+@media screen and (min-width: 767px) {
+  .internal_desktop-nav {
+    display: block;
+  }
+
+  .mobile-navigation {
+    display: none;
+  }
+}

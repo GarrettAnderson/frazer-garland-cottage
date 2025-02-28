@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/fontawesome-free-solid";
 import "../assets/styles/Home.css";
 import "../assets/styles/Projects.css";
+import "../assets/styles/DesktopNav.css";
 import MobileNav from "./Navigation/MobileNav";
 import Hamburger from "./Navigation/Hamburger";
 import Projects from "../../src/assets/data/projects.json";
@@ -94,7 +95,7 @@ export default function ProjectList() {
 
   return (
     <section className="universal_background-img projects_main-content">
-      <nav class="landing_mobile-nav-container">
+      <nav class="internal_mobile-nav-container">
         <Hamburger onClick={toggleHamburger} />
         <MobileNav toggleNav={hamburgerOpen} />
         <DesktopNav />

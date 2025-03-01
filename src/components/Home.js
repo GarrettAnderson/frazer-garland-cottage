@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import moment from "moment";
 import DesktopNav from "./Navigation/DesktopNav";
+import LandingPageNav from "./Navigation/LandingPageNav";
 import CottageImg from "../assets/images/cottage.png";
 import "../assets/styles/Home.css";
 import WeatherForecast from "./WeatherForecast";
@@ -69,7 +70,8 @@ export default function Home() {
         <section className="landing_main-content_right">
           {/* Navigation menus */}
           <nav className="site-navigation">
-            <DesktopNav />
+            <LandingPageNav />
+            {/* <DesktopNav /> */}
           </nav>
         </section>
       </main>

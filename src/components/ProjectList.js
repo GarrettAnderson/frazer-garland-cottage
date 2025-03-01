@@ -17,7 +17,6 @@ export default function ProjectList() {
   const [projectDescription, setProjectDescription] = useState();
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-
   // project lists
   const [projects, addProject] = useState(Projects);
   // let [projectToDo, addToDo] = useState([]);
@@ -25,7 +24,6 @@ export default function ProjectList() {
   // let [projectCompleted, addCompleted] = useState([]);
 
   console.log(projects.cottage_projects);
-
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
   const toggleHamburger = (x) => {

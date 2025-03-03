@@ -36,4 +36,4 @@ function CurrentWeather(props) {
   );
 }
 
-export { CurrentWeather };
+export default CurrentWeather;

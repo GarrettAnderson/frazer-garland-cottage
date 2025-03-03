@@ -4,7 +4,7 @@ import "../../assets/styles/MobileNav.css";
 
 export default function DesktopNav(props) {
   return (
-    <div className="desktop-navigation internal_desktop-nav">
+    <div className="desktop-navigation">
       <ul>
         {/* <li>
           <NavLink
@@ -13,7 +13,7 @@ export default function DesktopNav(props) {
             to="/"
             exact
           >
-            HOME
+            Home
           </NavLink>
         </li> */}
         <li>
@@ -21,19 +21,17 @@ export default function DesktopNav(props) {
             className="navbar-link"
             activeClassName="is-active"
             to="/forecast"
-            exact
           >
             Forecast
           </NavLink>
-        </li> 
+        </li>
         <li>
           <NavLink
             className="navbar-link"
             activeClassName="is-active"
             to="/projects"
-            exact
           >
-            PROJECTS
+            Projects
           </NavLink>
         </li>
         {/* <li>
@@ -51,7 +49,6 @@ export default function DesktopNav(props) {
             className="navbar-link"
             activeClassName="is-active"
             to="/availability"
-            exact
           >
             Availability
           </NavLink>

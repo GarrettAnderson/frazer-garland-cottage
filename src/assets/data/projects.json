@@ -1,0 +1,45 @@
+{
+  "cottage_projects": [
+    {
+      "title": "Replace Roof",
+      "status": "Completed",
+      "date": "Dec 2024"
+    },
+    {
+      "title": "Fix window screens",
+      "status": "Scheduled",
+      "date": "June 2025"
+    },
+    {
+      "title": "Fix front door screen",
+      "status": "Scheduled",
+      "date": "June 2025"
+    },
+    {
+      "title": "Fence/landscaping",
+      "status": "Scheduled",
+      "date": "June 2025"
+    },
+    {
+      "title": "Landscaping roadside",
+      "status": "Scheduled",
+      "date": "June 2025"
+    },
+    {
+      "title": "Blinds for front porch",
+      "status": "Scheduled",
+      "date": "June 2025"
+    },
+    {
+      "title": "Treat algae north side of cottage",
+      "status": "Scheduled",
+      "date": "June 2025"
+    },
+    {
+      "title": "Website",
+      "status": "In Progress",
+      "date": "January 2025",
+      "due-date": "April 2025"
+    }
+  ]
+}

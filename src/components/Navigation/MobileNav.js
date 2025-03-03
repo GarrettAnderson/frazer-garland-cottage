@@ -5,18 +5,33 @@ import "../../assets/styles/MobileNav.css";
 export default function MobileNav(props) {
   return (
     <div
-      className="mobile-navigation"
-      style={{ display: props.toggleNav ? "block" : "none" }}
+      className={`mobile-navigation ${
+        props.toggleNav ? "open" : ""
+      } landing_landing-nav internal_mobile-nav`}
+      // style={{ display: props.toggleNav ? "block" : "none" }}
     >
       <ul>
+        <li>
+          <NavLink className="navbar-link" activeClassName="is-active" to="/">
+            Home
+          </NavLink>
+        </li>
         <li>
           <NavLink
             className="navbar-link"
             activeClassName="is-active"
-            to="/"
-            exact
+            to="/forecast"
           >
-            HOME
+            Forecast
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            className="navbar-link"
+            activeClassName="is-active"
+            to="/projects"
+          >
+            Projects
           </NavLink>
         </li>
         <li>
@@ -24,7 +39,6 @@ export default function MobileNav(props) {
             className="navbar-link"
             activeClassName="is-active"
             to="/availability"
-            exact
           >
             AVAILABILITY
           </NavLink>
@@ -39,16 +53,6 @@ export default function MobileNav(props) {
             MANAGEMENT RECORDS
           </NavLink>
         </li> */}
-        <li>
-          <NavLink
-            className="navbar-link"
-            activeClassName="is-active"
-            to="/projects"
-            exact
-          >
-            PROJECTS
-          </NavLink>
-        </li>
       </ul>
     </div>
   );

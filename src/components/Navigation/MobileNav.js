@@ -5,7 +5,9 @@ import "../../assets/styles/MobileNav.css";
 export default function MobileNav(props) {
   return (
     <div
-      className="mobile-navigation landing_landing-nav internal_mobile-nav"
+      className={`mobile-navigation ${
+        props.toggleNav ? "open" : ""
+      } landing_landing-nav internal_mobile-nav`}
       style={{ display: props.toggleNav ? "block" : "none" }}
     >
       <ul>

@@ -8,20 +8,15 @@
 } */
 
 .mobile-navigation {
-  background-color: rgba(34, 61, 60, 0.75);
-  /* display: inline; */
-  position: relative;
-  z-index: 3;
+  background-color: rgba(34, 61, 60, 0.95);
+  position: absolute;
+  z-index: 4;
 }
 
-.mobile-navigation ul li {
-  list-style-type: none;
-  padding-right: 10px;
-}
-
-.mobile-navigation ul li a {
-  color: #fff;
-  text-decoration: none;
+.mobile-navigation.open {
+  height: 100vh;
+  width: 100vw;
+  bottom: 0rem;
 }
 
 @media (min-width: 767px) {

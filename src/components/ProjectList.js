@@ -95,7 +95,7 @@ export default function ProjectList() {
     <section className="universal_background-img projects_main-content">
       <nav className="internal_mobile-nav-container">
         <Hamburger onClickHamburger={toggleHamburger} />
-        <MobileNav toggleNav={!hamburgerOpen} />
+        <MobileNav toggleNav={hamburgerOpen} />
         <DesktopNav />
       </nav>
 

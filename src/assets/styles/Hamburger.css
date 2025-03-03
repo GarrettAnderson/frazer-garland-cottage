@@ -34,11 +34,6 @@
   align-items: center;
 }
 
-.mobile-nav_hamburger\.open {
-  position: relative;
-  z-index: 3;
-}
-
 .burger,
 #nav-icon3 span {
   width: 2rem;
@@ -76,17 +71,21 @@
 
 .mobile-nav_hamburger.open {
   position: relative;
-  z-index: 3;
+  z-index: 6;
+  -webkit-transition: 0.0125s ease-in-out;
+  -moz-transition: 0.0125s ease-in-out;
+  -o-transition: 0.0125s ease-in-out;
+  transition: 0.0125s ease-in-out;
 }
 
 .burger.burger1.open {
-  background-color: red !important;
   top: 18px;
   width: 0%;
   left: 50%;
 }
 
 .burger.burger2.open {
+  background-color: #fff;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
@@ -94,6 +93,7 @@
 }
 
 .burger.burger3.open {
+  background-color: #fff;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);

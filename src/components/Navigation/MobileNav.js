@@ -10,12 +10,7 @@ export default function MobileNav(props) {
     >
       <ul>
         <li>
-          <NavLink
-            className="navbar-link"
-            activeClassName="is-active"
-            to="/"
-            exact
-          >
+          <NavLink className="navbar-link" activeClassName="is-active" to="/">
             Home
           </NavLink>
         </li>
@@ -24,7 +19,6 @@ export default function MobileNav(props) {
             className="navbar-link"
             activeClassName="is-active"
             to="/forecast"
-            exact
           >
             Forecast
           </NavLink>
@@ -34,7 +28,6 @@ export default function MobileNav(props) {
             className="navbar-link"
             activeClassName="is-active"
             to="/projects"
-            exact
           >
             Projects
           </NavLink>
@@ -44,7 +37,6 @@ export default function MobileNav(props) {
             className="navbar-link"
             activeClassName="is-active"
             to="/availability"
-            exact
           >
             Availability
           </NavLink>

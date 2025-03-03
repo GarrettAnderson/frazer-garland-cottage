@@ -21,7 +21,6 @@ export default function DesktopNav(props) {
             className="navbar-link"
             activeClassName="is-active"
             to="/forecast"
-            exact
           >
             Forecast
           </NavLink>
@@ -31,7 +30,6 @@ export default function DesktopNav(props) {
             className="navbar-link"
             activeClassName="is-active"
             to="/projects"
-            exact
           >
             Projects
           </NavLink>
@@ -51,7 +49,6 @@ export default function DesktopNav(props) {
             className="navbar-link"
             activeClassName="is-active"
             to="/availability"
-            exact
           >
             Availability
           </NavLink>

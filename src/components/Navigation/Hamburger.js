@@ -7,6 +7,12 @@ export default function Hamburger(props) {
 
   const handleOpenToggleClass = () => {
     setIsOpen((prev) => !prev);
+    console.log("props:", props.onClickHamburger);
+    // Call the onClick function from props if it's passed
+    if (props.onClickHamburger) {
+      console.log("toggle menu");
+      props.onClickHamburger();
+    }
   };
 
   return (

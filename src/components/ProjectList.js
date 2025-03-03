@@ -7,7 +7,7 @@ import "../assets/styles/Projects.css";
 import "../assets/styles/DesktopNav.css";
 import MobileNav from "./Navigation/MobileNav";
 import Hamburger from "./Navigation/Hamburger";
-import Projects from "../../src/assets/data/projects.json";
+import Projects from "../assets/data/projects.json";
 import axios from "axios";
 import DesktopNav from "./Navigation/DesktopNav";
 
@@ -26,9 +26,9 @@ export default function ProjectList() {
   console.log(projects.cottage_projects);
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
-  const toggleHamburger = (x) => {
-    console.log(x, "hamburger open");
-    setHamburgerOpen(!hamburgerOpen);
+  const toggleHamburger = () => {
+    setHamburgerOpen((prev) => !prev);
+    console.log("hamburger open", !hamburgerOpen);
   };
 
   // Get the projects from the API endpoint
@@ -93,9 +93,9 @@ export default function ProjectList() {
 
   return (
     <section className="universal_background-img projects_main-content">
-      <nav class="internal_mobile-nav-container">
-        <Hamburger onClick={toggleHamburger} />
-        <MobileNav toggleNav={hamburgerOpen} />
+      <nav className="internal_mobile-nav-container">
+        <Hamburger onClickHamburger={toggleHamburger} />
+        <MobileNav toggleNav={!hamburgerOpen} />
         <DesktopNav />
       </nav>
 

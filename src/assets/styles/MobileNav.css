@@ -3,9 +3,9 @@
   width: 100%;
 }
 
-.mobile-nav_hamburger.open {
+/* .mobile-nav_hamburger.open {
   display: block;
-}
+} */
 
 .mobile-navigation {
   background-color: rgba(34, 61, 60, 0.75);

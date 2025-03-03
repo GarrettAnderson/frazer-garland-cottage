@@ -28,13 +28,22 @@
   transform: translateX(0%);
 }
 
+.navbar-link {
+  font-family: "Beachfly", serif;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
 @media (min-width: 767px) {
   .mobile-nav_hamburger {
     display: none;
   }
 
   .desktop-navigation {
-    display: inline;
+    display: block;
+    width: 80%;
+    max-width: 1250px;
+    margin: 0 auto;
   }
 
   .desktop-navigation ul {

@@ -40,7 +40,7 @@ export default function MobileNav(props) {
             activeClassName="is-active"
             to="/availability"
           >
-            Availability
+            AVAILABILITY
           </NavLink>
         </li>
         {/* <li>
@@ -50,7 +50,7 @@ export default function MobileNav(props) {
             to="/records"
             exact
           >
-            Management Records
+            MANAGEMENT RECORDS
           </NavLink>
         </li> */}
       </ul>

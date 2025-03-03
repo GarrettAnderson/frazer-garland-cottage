@@ -1,4 +1,5 @@
 @font-face {
+
   font-family: "Beachfly";
   src: url("../../assets/fonts/Beachfly.woff") format("woff"),
     url("../../assets/fonts/Beachfly.woff2") format("woff2");
@@ -118,6 +119,7 @@
 .App-link {
   color: #61dafb;
 }
+
 
 .availability-container {
   background-color: rgba(0, 0, 0, 0.5);

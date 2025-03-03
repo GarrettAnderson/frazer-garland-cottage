@@ -13,7 +13,7 @@ export default function DesktopNav(props) {
             to="/"
             exact
           >
-            Home
+            HOME
           </NavLink>
         </li> */}
         <li>
@@ -25,7 +25,7 @@ export default function DesktopNav(props) {
           >
             Forecast
           </NavLink>
-        </li>
+        </li> 
         <li>
           <NavLink
             className="navbar-link"
@@ -33,7 +33,7 @@ export default function DesktopNav(props) {
             to="/projects"
             exact
           >
-            Projects
+            PROJECTS
           </NavLink>
         </li>
         {/* <li>

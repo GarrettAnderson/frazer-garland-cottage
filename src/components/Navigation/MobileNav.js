@@ -8,7 +8,7 @@ export default function MobileNav(props) {
       className={`mobile-navigation ${
         props.toggleNav ? "open" : ""
       } landing_landing-nav internal_mobile-nav`}
-      style={{ display: props.toggleNav ? "block" : "none" }}
+      // style={{ display: props.toggleNav ? "block" : "none" }}
     >
       <ul>
         <li>

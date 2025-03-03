@@ -8,15 +8,24 @@
 } */
 
 .mobile-navigation {
+  height: 100vh;
+  width: 100vw;
+  bottom: 0rem;
+  transform: translateX(-100%);
   background-color: rgba(34, 61, 60, 0.95);
   position: absolute;
   z-index: 4;
+  -webkit-transition: transform 0.3s ease-in-out;
+  -moz-transition: transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .mobile-navigation.open {
   height: 100vh;
   width: 100vw;
   bottom: 0rem;
+  transform: translateX(0%);
 }
 
 @media (min-width: 767px) {

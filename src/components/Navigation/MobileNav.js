@@ -7,7 +7,9 @@ export default function MobileNav(props) {
     <div
       className={`mobile-navigation ${
         props.toggleNav ? "open" : ""
-      } landing_landing-nav internal_mobile-nav`}
+      } landing_landing-nav internal_mobile-nav ${
+        props.toggleNav ? "open" : ""
+      }`}
       // style={{ display: props.toggleNav ? "block" : "none" }}
     >
       <ul>
@@ -40,7 +42,7 @@ export default function MobileNav(props) {
             activeClassName="is-active"
             to="/availability"
           >
-            AVAILABILITY
+            Availability
           </NavLink>
         </li>
         {/* <li>

@@ -3,6 +3,19 @@
   width: 100%;
 }
 
+/* .internal_mobile-nav-container {
+  position: fixed;
+  z-index: 4;
+  height: 100vh;
+  bottom: 0;
+} */
+
+.internal_mobile-nav-container.open {
+  position: relative;
+  z-index: 4;
+  height: 100%;
+}
+
 /* .mobile-nav_hamburger.open {
   display: block;
 } */
@@ -26,6 +39,7 @@
   width: 100vw;
   bottom: 0rem;
   transform: translateX(0%);
+  position: fixed;
 }
 
 .navbar-link {
@@ -35,8 +49,9 @@
 }
 
 @media (min-width: 767px) {
-  .mobile-nav_hamburger {
-    display: none;
+  .mobile-nav_hamburger,
+  .internal_mobile-nav {
+    display: none !important;
   }
 
   .desktop-navigation {

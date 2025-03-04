@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "../../assets/styles/MobileNav.css";
 
-export default function DesktopNav(props) {
+export default function LandingPageNav(props) {
   return (
     <div className="desktop-navigation">
       <ul>

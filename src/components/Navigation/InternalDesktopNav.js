@@ -1,10 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "../../assets/styles/MobileNav.css";
+import "../../assets/styles/Home.css";
 
-export default function DesktopNav(props) {
+export default function InternalDesktopNav(props) {
   return (
-    <div className="desktop-navigation internal_desktop-nav">
+    <div className="internal_desktop-nav">
       <ul>
         <li>
           <NavLink

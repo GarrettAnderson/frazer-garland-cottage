@@ -110,3 +110,14 @@
 .project-card-details p {
   margin: 0.5rem 0;
 }
+
+@media (min-width: 767px) {
+  .projects-container {
+    margin-top: 1rem;
+  }
+
+  .projects-wrapper {
+    flex-direction: row;
+    justify-content: center;
+  }
+}

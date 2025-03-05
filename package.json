@@ -27,7 +27,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build --repo=git@github.com:GarrettAnderson/frazer-garland-cottage.git",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

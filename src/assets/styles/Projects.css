@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .projects_title h1 {
   font-family: "Beachfly", serif;
   font-size: 3.5rem;
@@ -5,6 +6,30 @@
   z-index: 1;
   display: flex;
   flex-direction: column;
+=======
+.projects-container {
+  position: relative;
+  width: 100%;
+  /* top: 6%; */
+  /* z-index: 5; */
+  /*
+  display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+
+/* .projects_title {
+  margin-top: 10%;
+} */
+
+.projects_title h1 {
+  font-family: "Beachfly", serif;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+>>>>>>> dev_env
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -22,6 +47,13 @@
 .projects-wrapper {
   position: relative;
   z-index: 3;
+<<<<<<< HEAD
+=======
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+>>>>>>> dev_env
 }
 
 .projects_main-content::before {
@@ -90,4 +122,15 @@
 
 .project-card-details p {
   margin: 0.5rem 0;
+}
+
+@media (min-width: 767px) {
+  .projects-container {
+    margin-top: 1rem;
+  }
+
+  .projects-wrapper {
+    flex-direction: row;
+    justify-content: center;
+  }
 }

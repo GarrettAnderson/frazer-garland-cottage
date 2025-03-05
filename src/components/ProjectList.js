@@ -9,7 +9,11 @@ import MobileNav from "./Navigation/MobileNav";
 import Hamburger from "./Navigation/Hamburger";
 import Projects from "../assets/data/projects.json";
 import axios from "axios";
+<<<<<<< HEAD
 import DesktopNav from "./Navigation/DesktopNav";
+=======
+import InternalDesktopNav from "./Navigation/InternalDesktopNav";
+>>>>>>> dev_env
 
 export default function ProjectList() {
   // modal functionality
@@ -96,10 +100,11 @@ export default function ProjectList() {
       <nav className="internal_mobile-nav-container">
         <Hamburger onClickHamburger={toggleHamburger} />
         <MobileNav toggleNav={hamburgerOpen} />
-        <DesktopNav />
+        <InternalDesktopNav />
       </nav>
 
       {/* To Do Projects */}
+<<<<<<< HEAD
       <section className="projects_title">
         <h1>Projects</h1>
       </section>
@@ -173,6 +178,83 @@ export default function ProjectList() {
               )
             )}
           </ol>
+=======
+      <section className="projects-container">
+        <section className="projects_title">
+          <h1>Projects</h1>
+        </section>
+        <section class="projects-wrapper">
+          <section className="section-container to-do-projects">
+            <h1>To Do</h1>
+            <ol>
+              {projects.cottage_projects.map((project, i) =>
+                project.status === "Scheduled" ? (
+                  <li key={i}>
+                    <div className="card">
+                      <div className="card-body project-card-details">
+                        <h5 className="card-title">{project.title}</h5>
+                        {/* <p className="card-text">{project.project_details}</p>
+                    <FontAwesomeIcon
+                      icon={faTrash}
+                      onClick={() => {
+                        deleteProject(project.id);
+                      }}
+                    /> */}
+                      </div>
+                    </div>
+                  </li>
+                ) : (
+                  <div></div>
+                )
+              )}
+            </ol>
+
+            {/* open model to add card */}
+            {/* <button className="btn" onClick={handleShow}>
+          + Add Card
+        </button> */}
+          </section>
+          {/* Projects In Progress Section */}
+          <section className="section-container in-progress-projects">
+            <h1>In Progress</h1>
+            <ol>
+              {projects.cottage_projects.map((project, i) =>
+                project.status === "In Progress" ? (
+                  <li key={i}>
+                    <div className="card">
+                      <div className="card-body">
+                        <h5 className="card-title">{project.title}</h5>
+                        {/* <p className="card-text">{project.Details}</p> */}
+                      </div>
+                    </div>
+                  </li>
+                ) : (
+                  <div></div>
+                )
+              )}
+            </ol>
+          </section>
+          {/* Projects Completed Section */}
+          <section className="section-container completed-projects">
+            <h1>Completed</h1>
+            <ol>
+              {projects.cottage_projects.map((project, i) =>
+                project.status === "Completed" ? (
+                  <li key={i}>
+                    <div className="card">
+                      <div className="card-body">
+                        <h5 className="card-title">{project.title}</h5>
+                        {/* <p className="card-text">{project.Details}</p> */}
+                      </div>
+                    </div>
+                  </li>
+                ) : (
+                  <div></div>
+                )
+              )}
+            </ol>
+          </section>
+>>>>>>> dev_env
         </section>
       </section>
 

@@ -3,6 +3,22 @@
   width: 100%;
 }
 
+<<<<<<< HEAD
+=======
+/* .internal_mobile-nav-container {
+  position: fixed;
+  z-index: 4;
+  height: 100vh;
+  bottom: 0;
+} */
+
+.internal_mobile-nav-container.open {
+  position: relative;
+  z-index: 4;
+  height: 100%;
+}
+
+>>>>>>> dev_env
 /* .mobile-nav_hamburger.open {
   display: block;
 } */
@@ -26,17 +42,27 @@
   width: 100vw;
   bottom: 0rem;
   transform: translateX(0%);
+<<<<<<< HEAD
+=======
+  position: fixed;
+>>>>>>> dev_env
 }
 
 .navbar-link {
   font-family: "Beachfly", serif;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   text-decoration: none;
 }
 
 @media (min-width: 767px) {
+<<<<<<< HEAD
   .mobile-nav_hamburger {
     display: none;
+=======
+  .mobile-nav_hamburger,
+  .internal_mobile-nav {
+    display: none !important;
+>>>>>>> dev_env
   }
 
   .desktop-navigation {

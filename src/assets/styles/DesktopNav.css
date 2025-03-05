@@ -4,9 +4,56 @@
   display: none;
 }
 
+<<<<<<< HEAD
 @media screen and (min-width: 767px) {
   .internal_desktop-nav {
     display: block;
+=======
+@media (min-width: 767px) {
+  .internal_desktop-nav > ul > li > a:first-child {
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+  }
+
+  .internal_desktop-nav > ul > li > a:nth-child(2) {
+    border-right: 1px solid #fff;
+  }
+
+  /* .desktop-navigation > ul > li:nth-child(3) {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+  } */
+
+  .internal_desktop-nav > ul > li > a:last-child {
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+  }
+
+  .internal_desktop-nav {
+    display: flex;
+    background-color: rgba(34, 61, 60, 0.75);
+    height: 4rem;
+    max-height: 4rem;
+    position: relative;
+    z-index: 1;
+  }
+  .internal_desktop-nav > ul {
+    display: flex;
+    position: relative;
+    z-index: 3;
+    list-style: none;
+    width: 60%;
+    padding-left: 0;
+    margin: 0 auto;
+    justify-content: space-evenly;
+  }
+
+  .internal_desktop-nav > ul > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+>>>>>>> dev_env
   }
 
   .mobile-navigation {

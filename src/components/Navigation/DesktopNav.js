@@ -24,10 +24,6 @@ export default function DesktopNav(props) {
             exact
           >
             Forecast
-<<<<<<< HEAD
-          </NavLink>
-        </li> 
-=======
           </NavLink>
         </li>
         <li>
@@ -50,7 +46,6 @@ export default function DesktopNav(props) {
             Management Records
           </NavLink>
         </li> */}
->>>>>>> dev_env
         <li>
           <NavLink
             className="navbar-link"

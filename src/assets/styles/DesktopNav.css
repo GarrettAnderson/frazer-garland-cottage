@@ -4,11 +4,6 @@
   display: none;
 }
 
-<<<<<<< HEAD
-@media screen and (min-width: 767px) {
-  .internal_desktop-nav {
-    display: block;
-=======
 @media (min-width: 767px) {
   .internal_desktop-nav > ul > li > a:first-child {
     border-left: 1px solid #fff;
@@ -53,7 +48,6 @@
     justify-content: center;
     align-items: center;
     width: 25%;
->>>>>>> dev_env
   }
 
   .mobile-navigation {

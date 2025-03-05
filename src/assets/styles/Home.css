@@ -1,8 +1,4 @@
 @font-face {
-<<<<<<< HEAD
-
-=======
->>>>>>> dev_env
   font-family: "Beachfly";
   src: url("../../assets/fonts/Beachfly.woff") format("woff"),
     url("../../assets/fonts/Beachfly.woff2") format("woff2");
@@ -123,10 +119,6 @@
   color: #61dafb;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> dev_env
 .availability-container {
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
@@ -199,8 +191,6 @@
   justify-content: center;
 }
 
-<<<<<<< HEAD
-=======
 .internal_desktop-nav > ul > li > a {
   height: 45%;
   width: 100%;
@@ -213,7 +203,6 @@
   justify-content: center;
 }
 
->>>>>>> dev_env
 @media screen and (min-width: 767px) {
   .desktop-navigation {
     display: inline;

@@ -9,11 +9,7 @@ import MobileNav from "./Navigation/MobileNav";
 import Hamburger from "./Navigation/Hamburger";
 import Projects from "../assets/data/projects.json";
 import axios from "axios";
-<<<<<<< HEAD
-import DesktopNav from "./Navigation/DesktopNav";
-=======
 import InternalDesktopNav from "./Navigation/InternalDesktopNav";
->>>>>>> dev_env
 
 export default function ProjectList() {
   // modal functionality

@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/frazer-garland-cottage/static/css/main.ddcf9c18.css",
+    "main.js": "/frazer-garland-cottage/static/js/main.b4b4ca7b.js",
+    "static/media/cottage.png": "/frazer-garland-cottage/static/media/cottage.f53974c5f7591b66ffd3.png",
+    "static/media/Beachfly.woff": "/frazer-garland-cottage/static/media/Beachfly.39e74ca9b313438d6b4b.woff",
+    "static/media/Beachfly.woff2": "/frazer-garland-cottage/static/media/Beachfly.831f82a5251a3ca11e01.woff2",
+    "index.html": "/frazer-garland-cottage/index.html",
+    "main.ddcf9c18.css.map": "/frazer-garland-cottage/static/css/main.ddcf9c18.css.map",
+    "main.b4b4ca7b.js.map": "/frazer-garland-cottage/static/js/main.b4b4ca7b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ddcf9c18.css",
+    "static/js/main.b4b4ca7b.js"
+  ]
+}

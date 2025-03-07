@@ -6,12 +6,24 @@ import Home from "./components/Home";
 import Availability from "./components/Availability";
 import ManagementRecord from "./components/ManagementRecord";
 import ProjectList from "./components/ProjectList";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
+function DebugRouter() {
+  const location = useLocation();
+  useEffect(() => {
+    console.log("Route changed:", location.pathname);
+  }, [location]);
+
+  return null;
+}
 
 function App() {
   return (
     <div className="App-container">
       {/* <BrowserRouter basename="/frazer-garland-cottage"> */}
-      <Router basename="/">
+      <Router>
+        <DebugRouter /> {/* Debugging tool */}
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
           <Route exact path="/availability" element={<Availability />}></Route>

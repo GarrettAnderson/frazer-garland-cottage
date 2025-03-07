@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App-container">
       {/* <BrowserRouter> */}
-      <Router>
+      <Router basename="/frazer-garland-cottage">
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
           <Route exact path="/availability" element={<Availability />}></Route>

@@ -10,8 +10,8 @@ import ProjectList from "./components/ProjectList";
 function App() {
   return (
     <div className="App-container">
-      {/* <BrowserRouter>s */}
-      <Router basename="/frazer-garland-cottage">
+      {/* <BrowserRouter basename="/frazer-garland-cottage"> */}
+      <Router>
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
           <Route exact path="/availability" element={<Availability />}></Route>

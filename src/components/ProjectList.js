@@ -6,10 +6,10 @@ import "../assets/styles/Home.css";
 import "../assets/styles/Projects.css";
 import "../assets/styles/DesktopNav.css";
 import MobileNav from "./Navigation/MobileNav";
+import InternalDesktopNav from "./Navigation/InternalDesktopNav";
 import Hamburger from "./Navigation/Hamburger";
 import Projects from "../assets/data/projects.json";
 import axios from "axios";
-import InternalDesktopNav from "./Navigation/InternalDesktopNav";
 
 export default function ProjectList() {
   // modal functionality
@@ -100,7 +100,7 @@ export default function ProjectList() {
       </nav>
 
       {/* To Do Projects */}
-      <section className="projects_title">
+      <section className="universal_page-title projects_title">
         <h1>Projects</h1>
       </section>
       <section class="projects-wrapper">

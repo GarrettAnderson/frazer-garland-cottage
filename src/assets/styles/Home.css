@@ -1,9 +1,3 @@
-@font-face {
-  font-family: "Beachfly";
-  src: url("../../assets/fonts/Beachfly.woff") format("woff"),
-    url("../../assets/fonts/Beachfly.woff2") format("woff2");
-}
-
 /* .landing_mobile-nav-container {
   display: flex;
   justify-content: end;
@@ -28,22 +22,6 @@
 .mobile-navigation {
   display: inline;
 } */
-
-.App-container {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  background-color: #e5f1f9;
-}
-
-.universal_background-img {
-  background-image: url("../images/cottage.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100vw;
-  height: 100vh;
-}
 
 /* .landing_home-page::before {
   content: "";
@@ -117,16 +95,6 @@
 
 .App-link {
   color: #61dafb;
-}
-
-.availability-container {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  height: 70vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 2rem;
 }
 
 /* Nav Menu (Mobile Desktop: Right Half of the home page, Mobile: middle of viewport ) */

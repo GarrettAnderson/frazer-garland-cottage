@@ -3,6 +3,7 @@ import moment from "moment";
 import DesktopNav from "./Navigation/DesktopNav";
 import LandingPageNav from "./Navigation/LandingPageNav";
 import CottageImg from "../assets/images/cottage.png";
+import "../App.css";
 import "../assets/styles/Home.css";
 import WeatherForecast from "./WeatherForecast";
 import { CurrentWeather } from "./CurrentWeather";

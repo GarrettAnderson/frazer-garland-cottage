@@ -16,16 +16,6 @@
   list-style: none;
 }
 
-.availability-container {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  height: 70vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 2rem;
-}
-
 .current-weather ol {
   list-style: none;
   display: flex;

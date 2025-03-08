@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "Beachfly";
+  src: url("../src/assets/fonts/Beachfly.woff") format("woff"),
+    url("../src/assets/fonts/Beachfly.woff2") format("woff2");
+}
+
+/* .App-container {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #e5f1f9;
+} */
+
+.universal_background-img {
+  background-image: url("../src/assets/images/cottage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.universal_page-title h1 {
+  font-family: "Beachfly", serif;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: white;
+  position: relative;
+}
+
+.universal_internal-page-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

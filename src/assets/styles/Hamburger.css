@@ -1,9 +1,10 @@
 .mobile-nav_hamburger,
 .internal_mobile-nav-container .mobile-nav_hamburger,
 #nav-icon3 {
-  width: 2rem;
-  height: 2rem;
+  width: 4rem;
+  height: 4rem;
   display: flex;
+  /* justify-content: center; */
   justify-content: space-around;
   flex-flow: column nowrap;
   z-index: 3;
@@ -36,11 +37,12 @@
 
 .burger,
 #nav-icon3 span {
-  width: 2rem;
+  width: 100%;
   height: 0.35rem;
+  /* height: 15%; */
   /* border-radius: 10px; */
   background-color: rgba(34, 61, 60, 1);
-  transform-origin: 8px;
+  transform-origin: 18px;
   /*  transition: all 0.3s linear; */
   display: block;
   position: relative;

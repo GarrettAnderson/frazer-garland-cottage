@@ -93,7 +93,7 @@ export default function ProjectList() {
 
   return (
     <section className="universal_background-img projects_main-content">
-      <nav className="internal_mobile-nav-container">
+      <nav className="internal_nav-container">
         <Hamburger onClickHamburger={toggleHamburger} />
         <MobileNav toggleNav={hamburgerOpen} />
         <InternalDesktopNav />

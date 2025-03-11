@@ -23,7 +23,7 @@ export default function DesktopNav(props) {
             to="/forecast"
             exact
           >
-            Forecast
+            Weather
           </NavLink>
         </li>
         <li>

@@ -24,7 +24,7 @@ export default function MobileNav(props) {
             activeClassName="is-active"
             to="/forecast"
           >
-            Forecast
+            Weather
           </NavLink>
         </li>
         <li>

@@ -22,7 +22,7 @@ export default function LandingPageNav(props) {
             activeClassName="is-active"
             to="/forecast"
           >
-            Forecast
+            Weather
           </NavLink>
         </li>
         <li>

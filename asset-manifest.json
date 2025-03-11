@@ -1,16 +1,13 @@
 {
   "files": {
     "main.css": "./static/css/main.43177bee.css",
-    "main.js": "./static/js/main.b2bf548a.js",
+    "main.js": "./static/js/main.43177bee.js",
     "static/media/cottage.png": "./static/media/cottage.f53974c5f7591b66ffd3.png",
     "static/media/Beachfly.woff": "./static/media/Beachfly.39e74ca9b313438d6b4b.woff",
     "static/media/Beachfly.woff2": "./static/media/Beachfly.831f82a5251a3ca11e01.woff2",
     "index.html": "./index.html",
     "main.43177bee.css.map": "./static/css/main.43177bee.css.map",
-    "main.b2bf548a.js.map": "./static/js/main.b2bf548a.js.map"
+    "main.b2bf548a.js.map": "./static/js/main.43177bee.js.map"
   },
-  "entrypoints": [
-    "static/css/main.43177bee.css",
-    "static/js/main.b2bf548a.js"
-  ]
+  "entrypoints": ["static/css/main.43177bee.css", "static/js/main.43177bee.js"]
 }

@@ -74,9 +74,9 @@ export default function Home() {
             <LandingPageNav />
             {/* <DesktopNav /> */}
           </nav>
+          <Footer />
         </section>
       </main>
-      <Footer />
     </div>
   );
 }

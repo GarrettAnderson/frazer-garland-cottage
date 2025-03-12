@@ -43,7 +43,7 @@
   height: 20%;
 }
 
-.landing_main-content_left::before {
+/* .landing_main-content_left::before {
   content: "";
   position: absolute;
   top: 0;
@@ -51,9 +51,8 @@
   width: 100%;
   height: 20%;
   background: rgba(255, 234, 250, 0.5);
-  /* background-color: rgba(255, 234, 151, 0.5); */
-  z-index: 1;
-}
+    z-index: 1;
+} */
 
 .landing_main-content_left h1 {
   font-family: "Beachfly", serif;
@@ -151,7 +150,9 @@
 .mobile-navigation > ul > li > a {
   height: 100%;
   width: 100%;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
+  font-weight: bold;
   color: #fff;
   z-index: 1;
   text-decoration: none;

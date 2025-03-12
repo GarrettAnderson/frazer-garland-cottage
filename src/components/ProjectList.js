@@ -9,6 +9,7 @@ import MobileNav from "./Navigation/MobileNav";
 import InternalDesktopNav from "./Navigation/InternalDesktopNav";
 import Hamburger from "./Navigation/Hamburger";
 import Projects from "../assets/data/projects.json";
+import Footer from "./Footer";
 import axios from "axios";
 
 export default function ProjectList() {
@@ -203,6 +204,10 @@ export default function ProjectList() {
           </Button>
         </Modal.Footer>
       </Modal> */}
+
+      <section className="projects_footer-wrapper">
+        <Footer />
+      </section>
     </section>
   );
 }

@@ -41,8 +41,8 @@
   height: 0.35rem;
   /* height: 15%; */
   /* border-radius: 10px; */
-  background-color: rgba(34, 61, 60, 1);
-  transform-origin: 18px;
+  background-color: rgb(250, 250, 250);
+  transform-origin: 17px;
   /*  transition: all 0.3s linear; */
   display: block;
   position: relative;

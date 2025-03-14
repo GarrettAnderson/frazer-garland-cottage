@@ -205,9 +205,9 @@ export default function ProjectList() {
         </Modal.Footer>
       </Modal> */}
 
-      <section className="projects_footer-wrapper">
+      {/* <section className="projects_footer-wrapper">
         <Footer />
-      </section>
+      </section> */}
     </section>
   );
 }

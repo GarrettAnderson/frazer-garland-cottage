@@ -74,7 +74,7 @@ export default function Home() {
             <LandingPageNav />
             {/* <DesktopNav /> */}
           </nav>
-          <Footer />
+          {/* <Footer /> */}
         </section>
       </main>
     </div>

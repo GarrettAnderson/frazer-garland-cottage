@@ -152,7 +152,7 @@
   width: 100%;
   font-family: "Montserrat", sans-serif;
   /* font-family: "Roboto", sans-serif; */
-  font-weight: bold;
+  font-weight: 400;
   color: #fff;
   z-index: 1;
   text-decoration: none;
@@ -231,7 +231,7 @@
     top: 0;
     left: 50%;
     width: 50%;
-    height: 90%;
+    height: 100%;
   }
 
   .site-navigation {
